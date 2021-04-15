@@ -19,17 +19,17 @@ public class MyWelcomeActivity extends WelcomeActivity {
         return new WelcomeConfiguration.Builder(this)
                 .defaultBackgroundColor(R.color.start1)
                 .page(new TitlePage(R.mipmap.start2,
-                        "掌上科师  一触即达").background(R.color.start1)
+                        "掌上西邮  一触即达").background(R.color.start1)
                 )
                 .page(new BasicPage(R.mipmap.start1,
-                        "立足科师",
+                        "立足西邮",
                         "聚合校内活动信息").background(R.color.start2)
                 )
                 .page(new TitlePage(R.mipmap.start3,
                         "丰富资讯   任你阅读").background(R.color.start3)
                 )
                 .page(new TitlePage(R.mipmap.start4,
-                        "科师有约   与你相约").background(R.color.start4)
+                        "西邮有约   与你相约").background(R.color.start4)
                 )
                 .swipeToDismiss(true)
                 .build();

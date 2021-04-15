@@ -53,18 +53,23 @@ public class SignUpActivity extends BaseActivity {
      * 注册方法
      */
     public void signUp() {
+        LogUtils.e("[SignUpActivity] signUp failed signUp");
+
         String code = etAuthCode.getText().toString();
         if (!validate()) {
             onSignUpFailed(2);
+            LogUtils.e("[SignUpActivity] signUp failed validate");
             return;
         }
-        if (code.isEmpty()) {
-            etAuthCode.setError("请输入验证码");
-            return;
-        } else {
-            etAuthCode.setError(null);
-        }
+//        if (code.isEmpty()) {
+//            etAuthCode.setError("请输入验证码");
+//            LogUtils.e("[SignUpActivity] signUp authCode");
+//            return;
+//        } else {
+//            etAuthCode.setError(null);
+//        }
         btnSignUp.setEnabled(false);
+        LogUtils.e("[SignUpActivity] signUp setEnabled");
 
         final ProgressDialog progressDialog = new ProgressDialog(SignUpActivity.this,
                 R.style.AppTheme_Dark_Dialog);
@@ -74,12 +79,13 @@ public class SignUpActivity extends BaseActivity {
 
         String mobile = etMobile.getText().toString();
         String password = etPassword.getText().toString();
+        LogUtils.e("[SignUpActivity] signUp setEnabled mobile:%s password:%s"+mobile+password);
 
         MyUser user = new MyUser();
         user.setUsername("用户" + mobile);
         user.setPassword(password);
         user.setMobilePhoneNumber(mobile);
-        user.signOrLogin(code, new SaveListener<MyUser>() {
+        user.signUp(new SaveListener<MyUser>() {
             @Override
             public void done(MyUser user, BmobException e) {
                 if (e == null) {
@@ -180,6 +186,7 @@ public class SignUpActivity extends BaseActivity {
 
                 break;
             case R.id.btn_signup:
+                LogUtils.e("[SignUpActivity] signUp signUp");
                 signUp();
                 break;
             case R.id.tv_link_login:

@@ -26,13 +26,13 @@
         android:layout_marginBottom="8dp"
         android:gravity="center"
         android:textSize="14sp"
-        tools:text="科师有约" />
+        tools:text="西邮有约" />
 
 </RelativeLayout>
 
 
     <!--
-    <android.support.v7.widget.CardView
+    <androidx.cardview.widget.CardView
         android:id="@+id/app_root"
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -50,4 +50,4 @@
             android:layout_margin="5dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
-    </android.support.v7.widget.CardView>-->
+    </androidx.cardview.widget.CardView>-->

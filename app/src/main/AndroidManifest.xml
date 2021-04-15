@@ -50,10 +50,12 @@
         <!--            </intent-filter>-->
         <!--        </activity>-->
 
+
         <activity android:name=".activity.AppCompatPreferenceActivity" />
         <activity android:name=".activity.BaseActivity" />
         <activity android:name=".activity.ReviewTestActivity" />
-        <activity android:name=".activity.HomeActivity" />
+        <activity android:name=".activity.HomeActivity"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
         <activity android:name=".activity.WebActivity" />
         <activity
             android:name=".activity.MyWelcomeActivity"
@@ -129,7 +131,7 @@
 
         <receiver
             android:name="com.display.hevttcdemo.widget.CourseWidgetProvider"
-            android:label="科师有约">
+            android:label="西邮有约">
             <meta-data
                 android:name="android.appwidget.provider"
                 android:resource="@xml/ocurse_widget_info" />

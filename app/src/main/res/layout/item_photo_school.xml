@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
-    <android.support.v7.widget.CardView
+    <androidx.cardview.widget.CardView
         android:id="@+id/view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -22,7 +22,8 @@
             android:layout_margin="10dp"
             android:adjustViewBounds="true"
             android:transitionName="shareView"
-            tools:src="@mipmap/bg_xiaoli" />
+            tools:src="@mipmap/bg_xiaoli"
+            android:layout_alignParentLeft="true" />
 
         <TextView
             android:id="@+id/tv_name"
@@ -33,8 +34,10 @@
             android:layout_marginStart="80dp"
             android:layout_marginTop="20dp"
             android:visibility="gone"
-            tools:text="Name" />
+            tools:text="Name"
+            android:layout_alignLeft="@+id/view"
+            android:layout_marginLeft="80dp" />
 
-    </android.support.v7.widget.CardView>
+    </androidx.cardview.widget.CardView>
 
 </RelativeLayout>

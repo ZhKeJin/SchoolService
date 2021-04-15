@@ -244,7 +244,8 @@
 
                 <TextView
                     style="@style/txt_xiaoli_date"
-                    android:text="20" />
+                    android:text="20"
+                    tools:ignore="HardcodedText" />
 
                 <TextView
                     style="@style/txt_xiaoli_date"

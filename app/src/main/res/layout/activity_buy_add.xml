@@ -107,7 +107,7 @@
                     android:lines="3"
                     android:textSize="16sp" />
 
-                <android.support.v7.widget.RecyclerView
+                <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/rv_buy_add_pic"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -117,7 +117,8 @@
                     android:fadingEdge="none"
                     android:listSelector="@android:color/transparent"
                     android:scrollbarStyle="outsideOverlay"
-                    app:layoutManager="android.support.v7.widget.GridLayoutManager"
+
+                    app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
                     app:spanCount="3"
                     tools:itemCount="1"
                     tools:listitem="@layout/list_item_image" />

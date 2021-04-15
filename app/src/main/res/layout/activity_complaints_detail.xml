@@ -59,7 +59,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text="(*^_^*) 请详细描述您要反馈的问题，留下宝贵的建议或意见。科师母校会因为我们的共同努力而变得越来越好！" />
+            android:text="(*^_^*) 请详细描述您要反馈的问题，留下宝贵的建议或意见。西邮母校会因为我们的共同努力而变得越来越好！" />
 
         <Button
             android:id="@+id/bt_comp_submit"

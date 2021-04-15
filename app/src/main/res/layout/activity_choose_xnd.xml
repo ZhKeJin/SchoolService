@@ -6,7 +6,7 @@
     android:background="@color/colorCourseBg"
     android:orientation="vertical">
 
-    <android.support.v7.widget.Toolbar
+    <androidx.appcompat.widget.Toolbar
         android:id="@+id/choose_xnd_toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

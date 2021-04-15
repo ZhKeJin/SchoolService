@@ -90,7 +90,7 @@
         </LinearLayout>
     </LinearLayout>
 
-    <android.support.v7.widget.RecyclerView
+    <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_main"
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -99,9 +99,10 @@
         android:layout_marginRight="8dp"
         android:layout_weight="200"
         android:overScrollMode="never"
-        app:layoutManager="android.support.v7.widget.GridLayoutManager"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
         app:spanCount="4"
         tools:itemCount="7"
-        tools:listitem="@layout/item_module" />
+        tools:listitem="@layout/item_module"
+        android:layout_alignParentLeft="true" />
 
 </LinearLayout>
