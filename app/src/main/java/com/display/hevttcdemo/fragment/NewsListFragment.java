@@ -15,6 +15,8 @@ import java.util.List;
 import butterknife.BindView;
 import com.display.hevttcdemo.R;
 import com.display.hevttcdemo.activity.NewsWebActivity;
+import com.display.hevttcdemo.activity.TeamActivity;
+import com.display.hevttcdemo.activity.TeamDetailActivity;
 import com.display.hevttcdemo.adapter.GeneralAdapter;
 import com.display.hevttcdemo.bean.NewsBean;
 import com.display.hevttcdemo.utils.LogUtils;
@@ -69,54 +71,57 @@ public class NewsListFragment extends BaseFragment {
             public void onItemClick(@NonNull View view, int position) {
                 LogUtils.e(newsBeanList.get(position).getContent());
                 Intent intent = new Intent(getActivity(), NewsWebActivity.class);
-                intent.putExtra("url", newsBeanList.get(position).getContent());
+                intent.putExtra("newsbean", newsBeanList.get(position));
                 startActivity(intent);
+//                Intent intent = new Intent(getActivity(), NewsWebActivity.class);
+//                intent.putExtra("url", newsBeanList.get(position).getContent());
+//                startActivity(intent);
             }
         });
-        splMainNews.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
-            @Override
-            public void onRefresh() {
-                new Thread(new Runnable() {
-                    @Override
-                    public void run() {
-                        SystemClock.sleep(1500);
-                        BmobQuery<NewsBean> query = new BmobQuery<NewsBean>();
-                        query.order("-time");
-                        query.setLimit(10);
-                        query.addWhereEqualTo("tag", mTitleType);
-                        LogUtils.e("类型：" + mTitleType);
-                        query.setSkip(10 * refreshCount);
-                        //执行查询方法
-                        query.findObjects(new FindListener<NewsBean>() {
-                            @Override
-                            public void done(List<NewsBean> object, BmobException e) {
-                                if (e == null) {
-                                    LogUtils.e("查询成功：共" + object.size() + "条数据。");
-                                    refreshCount++;
-                                    if (object.size() == 0) {
-                                        ToastUtil.showShort("暂无更多数据");
-                                    } else {
-                                        for (NewsBean newsBean : object) {
-                                            newsBeanList.add(0, newsBean);
-                                            LogUtils.e(newsBean.getAuthor());
-                                        }
-                                        mAdapter.setData(newsBeanList);
-                                        //得到adapter.然后刷新
-                                        mRecyclerView.getAdapter().notifyDataSetChanged();
-                                        ToastUtil.showShort("刷新成功");
-                                    }
-                                    //停止刷新操作
-                                    splMainNews.setRefreshing(false);
-                                } else {
-                                    LogUtils.e("失败：" + e.getMessage() + "," + e.getErrorCode());
-                                }
-                            }
-                        });
-                    }
-                }).start();
-
-            }
-        });
+//        splMainNews.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+//            @Override
+//            public void onRefresh() {
+//                new Thread(new Runnable() {
+//                    @Override
+//                    public void run() {
+//                        SystemClock.sleep(1500);
+//                        BmobQuery<NewsBean> query = new BmobQuery<NewsBean>();
+//                        query.order("-time");
+//                        query.setLimit(10);
+//                        query.addWhereEqualTo("tag", mTitleType);
+//                        LogUtils.e("类型：" + mTitleType);
+//                        query.setSkip(10 * refreshCount);
+//                        //执行查询方法
+//                        query.findObjects(new FindListener<NewsBean>() {
+//                            @Override
+//                            public void done(List<NewsBean> object, BmobException e) {
+//                                if (e == null) {
+//                                    LogUtils.e("查询成功：共" + object.size() + "条数据。");
+//                                    refreshCount++;
+//                                    if (object.size() == 0) {
+//                                        ToastUtil.showShort("暂无更多数据");
+//                                    } else {
+//                                        for (NewsBean newsBean : object) {
+//                                            newsBeanList.add(0, newsBean);
+//                                            LogUtils.e(newsBean.getAuthor());
+//                                        }
+//                                        mAdapter.setData(newsBeanList);
+//                                        //得到adapter.然后刷新
+//                                        mRecyclerView.getAdapter().notifyDataSetChanged();
+//                                        ToastUtil.showShort("刷新成功");
+//                                    }
+//                                    //停止刷新操作
+//                                    splMainNews.setRefreshing(false);
+//                                } else {
+//                                    LogUtils.e("失败：" + e.getMessage() + "," + e.getErrorCode());
+//                                }
+//                            }
+//                        });
+//                    }
+//                }).start();
+//
+//            }
+//        });
 
     }
 
