@@ -23,9 +23,9 @@ import java.util.List;
 import com.display.hevttcdemo.R;
 
 /**
- * @ 创建时间: 2017/9/18 on 22:49.
+ * @ 创建时间: 2021/9/18 on 22:49.
  * @ 描述：选择对话框
- * @ 作者: vchao
+ * @ 作者：zhangkejin
  */
 public class SelectDialog extends Dialog implements OnClickListener, OnItemClickListener {
     private SelectDialogListener mListener;

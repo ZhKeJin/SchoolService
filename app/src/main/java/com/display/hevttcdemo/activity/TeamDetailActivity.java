@@ -10,9 +10,9 @@ import com.display.hevttcdemo.R;
 import com.display.hevttcdemo.bean.TeamBean;
 
 /**
- * @ 创建时间: 2017/10/4 on 20:09.
+ * @ 创建时间: 2021/10/4 on 20:09.
  * @ 描述：组织社团详情页面
- * @ 作者: vchao
+ * @ 作者：zhangkejin
  */
 public class TeamDetailActivity extends BaseActivity {
 

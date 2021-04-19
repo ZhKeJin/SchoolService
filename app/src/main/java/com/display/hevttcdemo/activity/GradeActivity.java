@@ -15,9 +15,9 @@ import com.display.hevttcdemo.bean.QuestBean;
 import com.display.hevttcdemo.db.LoveDao;
 
 /**
- * @ 创建时间: 2017/6/14 on 09:46.
+ * @ 创建时间: 2021/6/14 on 09:46.
  * @ 描述：分数界面（答题模块，尚未完成）
- * @ 作者: vchao
+ * @ 作者：zhangkejin
  */
 public class GradeActivity extends BaseActivity {
 

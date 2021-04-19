@@ -14,9 +14,9 @@ import xyz.zpayh.adapter.BaseViewHolder;
 import xyz.zpayh.adapter.IMultiItem;
 
 /**
- * @ 创建时间: 2017/9/20 on 16:32.
+ * @ 创建时间: 2021/9/20 on 16:32.
  * @ 描述：社团组织
- * @ 作者: vchao
+ * @ 作者：zhangkejin
  */
 
 public class TeamBean extends BmobObject implements IMultiItem, Serializable {

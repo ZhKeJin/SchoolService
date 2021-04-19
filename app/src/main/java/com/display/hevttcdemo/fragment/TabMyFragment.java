@@ -29,9 +29,9 @@ import com.display.hevttcdemo.utils.ToastUtil;
 import com.display.hevttcdemo.view.LoadDialog;
 
 /**
- * @ 创建时间: 2017/5/21 on 19:39.
+ * @ 创建时间: 2021/5/21 on 19:39.
  * @ 描述：我的页面fragment
- * @ 作者: vchao
+ * @ 作者：zhangkejin
  */
 public class TabMyFragment extends BaseFragment {
 
@@ -80,7 +80,7 @@ public class TabMyFragment extends BaseFragment {
                 startActivity(intent);
                 break;
             case R.id.ll_my_setting:
-                // TODO: 2017/10/4 跳转设置页面
+                // TODO: 2021/10/4 跳转设置页面
                 break;
             case R.id.ll_my_update:
                 LoadDialog.show(mActivity, "检查更新中……");

@@ -21,9 +21,9 @@ import com.display.hevttcdemo.utils.LogUtils;
 import xyz.zpayh.adapter.OnItemClickListener;
 
 /**
- * @ 创建时间: 2017/10/4 on 22:09.
+ * @ 创建时间: 2021/10/4 on 22:09.
  * @ 描述：组织社团页面
- * @ 作者: vchao
+ * @ 作者：zhangkejin
  */
 public class TeamActivity extends BaseActivity {
 

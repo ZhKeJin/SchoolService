@@ -17,9 +17,9 @@ import com.display.hevttcdemo.fragment.FindLoserFragment;
 import com.display.hevttcdemo.fragment.FindThingFragment;
 
 /**
- * @ 创建时间: 2017/10/3 on 10:03.
+ * @ 创建时间: 2021/10/3 on 10:03.
  * @ 描述：失物招领 + 寻物启事 页面
- * @ 作者: vchao
+ * @ 作者：zhangkejin
  */
 public class LoseActivity extends BaseAppCompatActivity {
     @BindView(R.id.coordinatortablayout)

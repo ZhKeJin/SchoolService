@@ -3,9 +3,9 @@ package com.display.hevttcdemo.bean;
 import cn.bmob.v3.BmobObject;
 
 /**
- * @ 创建时间: 2017/10/2 on 8:40.
+ * @ 创建时间: 2021/10/2 on 8:40.
  * @ 描述：意见反馈
- * @ 作者: vchao
+ * @ 作者：zhangkejin
  */
 
 public class Feedback extends BmobObject {

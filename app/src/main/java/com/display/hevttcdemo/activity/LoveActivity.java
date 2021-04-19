@@ -30,9 +30,9 @@ import cn.bmob.v3.listener.FindListener;
 import cn.bmob.v3.listener.SaveListener;
 
 /**
- * @ 创建时间: 2017/6/13 on 16:03.
+ * @ 创建时间: 2021/6/13 on 16:03.
  * @ 描述：表白墙页面
- * @ 作者: vchao
+ * @ 作者：zhangkejin
  */
 public class LoveActivity extends BaseActivity {
 

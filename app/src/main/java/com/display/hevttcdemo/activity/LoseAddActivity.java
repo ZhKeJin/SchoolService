@@ -48,9 +48,9 @@ import top.zibin.luban.Luban;
 import top.zibin.luban.OnCompressListener;
 
 /**
- * @ 创建时间: 2017/10/3 on 16:25.
+ * @ 创建时间: 2021/10/3 on 16:25.
  * @ 描述：失物招领发布页面
- * @ 作者: vchao
+ * @ 作者：zhangkejin
  */
 public class LoseAddActivity extends BaseActivity implements ImagePickerAdapter.OnRecyclerViewItemClickListener {
     @BindView(R.id.rv_lose_add_pic)

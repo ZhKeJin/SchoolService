@@ -15,9 +15,9 @@ import com.display.hevttcdemo.db.LoveDao;
 import com.display.hevttcdemo.utils.LogUtils;
 
 /**
- * @ 创建时间: 2017/6/11 on 16:25.
+ * @ 创建时间: 2021/6/11 on 16:25.
  * @ 描述： 答题fragment（答题开发中……）
- * @ 作者: vchao
+ * @ 作者：zhangkejin
  */
 public class AnswerFragment extends BaseFragment implements RadioGroup.OnCheckedChangeListener {
     private RadioButton rb_option_a;

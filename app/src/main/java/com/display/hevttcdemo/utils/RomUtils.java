@@ -8,9 +8,9 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 /**
- * @ 创建时间: 2017/10/1 on 21:09.
+ * @ 创建时间: 2021/10/1 on 21:09.
  * @ 描述：判断当前系统ROM 工具类(配合改变状态文字颜色)
- * @ 作者: vchao
+ * @ 作者：zhangkejin
  */
 
 public class RomUtils {

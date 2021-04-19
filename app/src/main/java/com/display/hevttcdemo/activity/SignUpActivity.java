@@ -23,9 +23,9 @@ import com.display.hevttcdemo.utils.LogUtils;
 import com.display.hevttcdemo.utils.ToastUtil;
 
 /**
- * @ 创建时间: 2017/8/23 on 22:09.
+ * @ 创建时间: 2021/8/23 on 22:09.
  * @ 描述：注册页面
- * @ 作者: vchao
+ * @ 作者：zhangkejin
  */
 public class SignUpActivity extends BaseActivity {
 

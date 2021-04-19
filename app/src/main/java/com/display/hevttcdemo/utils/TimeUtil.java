@@ -4,9 +4,9 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /**
- * @ 创建时间: 2017/5/25 on 17:14.
+ * @ 创建时间: 2021/5/25 on 17:14.
  * @ 描述：时间工具类
- * @ 作者: vchao
+ * @ 作者：zhangkejin
  */
 
 public class TimeUtil {

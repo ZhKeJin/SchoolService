@@ -12,9 +12,9 @@ import java.util.Map;
 import com.display.hevttcdemo.constant.SPkey;
 
 /**
- * @ 创建时间: 2017/7/18 on 12:58.
+ * @ 创建时间: 2021/7/18 on 12:58.
  * @ 描述：SharedPreferences封装类
- * @ 作者: vchao
+ * @ 作者：zhangkejin
  */
 public class SPUtils {
     //  保存值

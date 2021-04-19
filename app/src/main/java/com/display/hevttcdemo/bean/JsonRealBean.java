@@ -3,9 +3,9 @@ package com.display.hevttcdemo.bean;
 import java.util.List;
 
 /**
- * @ 创建时间: 2017/10/2 on 15:34.
+ * @ 创建时间: 2021/10/2 on 15:34.
  * @ 描述：实名认证json Bean
- * @ 作者: vchao
+ * @ 作者：zhangkejin
  */
 public class JsonRealBean {
 

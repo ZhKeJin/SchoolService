@@ -8,9 +8,9 @@ import androidx.fragment.app.FragmentPagerAdapter;
 import java.util.ArrayList;
 
 /**
- * @ 创建时间: 2017/8/28 on 23:19.
+ * @ 创建时间: 2021/8/28 on 23:19.
  * @ 描述：
- * @ 作者: vchao
+ * @ 作者：zhangkejin
  */
 public class MyPagerAdapter extends FragmentPagerAdapter {
     private ArrayList<Fragment> mFragments = new ArrayList<>();

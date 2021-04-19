@@ -13,9 +13,9 @@ import butterknife.ButterKnife;
 import butterknife.Unbinder;
 
 /**
- * @ 创建时间: 2017/5/14 on 14:20.
+ * @ 创建时间: 2021/5/14 on 14:20.
  * @ 描述：BaseFragment 基类
- * @ 作者: vchao
+ * @ 作者：zhangkejin
  */
 public abstract class BaseFragment extends Fragment {
 

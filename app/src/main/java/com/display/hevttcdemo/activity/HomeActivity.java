@@ -15,9 +15,9 @@ import com.display.hevttcdemo.utils.ToastUtil;
 import com.display.hevttcdemo.view.BottomTabView;
 
 /**
- * @ 创建时间: 2017/5/17 on 11:31.
+ * @ 创建时间: 2021/5/17 on 11:31.
  * @ 描述：主界面 Activity
- * @ 作者: vchao
+ * @ 作者：zhangkejin
  */
 
 public class HomeActivity extends BottomTabBaseActivity {

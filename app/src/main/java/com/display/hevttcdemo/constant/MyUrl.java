@@ -2,11 +2,11 @@ package com.display.hevttcdemo.constant;
 
 
 /**
- * 创建日期:2017/5/5 on 21:19
+ * 创建日期:2021/5/5 on 21:19
  * 描述: 网址url
  * （之前采用自建服务器搭建了若干接口，现原服务器已停用，
  * 后续有时间会重写这部分接口）
- * 作者: vchao
+ * 作者：zhangkejin
  */
 
 public class MyUrl {

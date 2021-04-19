@@ -137,7 +137,7 @@ public class HtmlTools {
      * @return
      */
     public static String getCurrXnd(String html) {
-        //<option selected="selected" value="2016-2017">2016-2017</option>
+        //<option selected="selected" value="2016-2021">2016-2021</option>
 
         String res = "";
         String pattern = "<option selected=\"selected\" value=\"((\\d\\d+)-(\\d\\d+))\">(.*?)</option>";

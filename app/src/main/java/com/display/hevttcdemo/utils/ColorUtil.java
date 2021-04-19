@@ -4,9 +4,9 @@ import android.graphics.Color;
 import android.graphics.Paint;
 
 /**
- * @ 创建时间: 2017/9/18 on 22:12.
+ * @ 创建时间: 2021/9/18 on 22:12.
  * @ 描述： 颜色工具类
- * @ 作者: vchao
+ * @ 作者：zhangkejin
  */
 public class ColorUtil {
 

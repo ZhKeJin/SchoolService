@@ -21,9 +21,9 @@ import cn.bmob.v3.exception.BmobException;
 import cn.bmob.v3.listener.SaveListener;
 
 /**
- * @ 创建时间: 2017/10/2 on 17:12.
+ * @ 创建时间: 2021/10/2 on 17:12.
  * @ 描述：投诉页面
- * @ 作者: vchao
+ * @ 作者：zhangkejin
  */
 public class ComplaintsDetailActivity extends BaseActivity {
 

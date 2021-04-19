@@ -9,9 +9,9 @@ import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 
 /**
- * @ 创建时间: 2017/10/1 on 21:08.
+ * @ 创建时间: 2021/10/1 on 21:08.
  * @ 描述： 状态栏文字颜色
- * @ 作者: vchao
+ * @ 作者：zhangkejin
  */
 public class LightStatusBarUtils {
     public static void setLightStatusBar(Activity activity, boolean dark) {

@@ -5,9 +5,9 @@ import java.io.Serializable;
 import cn.bmob.v3.BmobUser;
 
 /**
- * @ 创建时间: 2017/9/18 on 18:47.
+ * @ 创建时间: 2021/9/18 on 18:47.
  * @ 描述：用户类
- * @ 作者: vchao
+ * @ 作者：zhangkejin
  */
 
 public class MyUser extends BmobUser implements Serializable {

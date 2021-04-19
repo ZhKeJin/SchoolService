@@ -73,6 +73,6 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginBottom="4dp"
         android:gravity="bottom"
-        android:text="Copyright ©2017 KeShiYouYue All Right Reserved "
+        android:text="Copyright ©2021 KeShiYouYue All Right Reserved "
         android:textSize="10sp" />
 </LinearLayout>

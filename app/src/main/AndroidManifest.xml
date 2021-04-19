@@ -55,7 +55,7 @@
         <activity android:name=".activity.BaseActivity" />
         <activity android:name=".activity.ReviewTestActivity" />
         <activity android:name=".activity.HomeActivity"
-            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity android:name=".activity.WebActivity" />
         <activity
             android:name=".activity.MyWelcomeActivity"
@@ -72,12 +72,14 @@
         <activity
             android:name="com.lzy.imagepicker.ui.ImagePreviewDelActivity"
             android:theme="@style/ImagePickerThemeFullScreen" />
-        <activity android:name=".activity.BuyActivity" />
+        <activity android:name=".activity.BuyActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity android:name=".activity.PicDetailActivity" />
         <activity android:name=".activity.AnswerActivity" />
         <activity android:name=".activity.GradeActivity" />
         <activity android:name=".activity.AboutActivity" />
-        <activity android:name=".activity.LoseActivity" />
+        <activity android:name=".activity.LoseActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
             android:name=".activity.LoginActivity"
             android:theme="@style/AppTheme.Dark" />
@@ -116,7 +118,8 @@
         <activity android:name=".activity.WeatherActivity" />
 
 
-        <activity android:name=".activity.CourseLoginActivity" />
+        <activity android:name=".activity.CourseLoginActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity android:name=".activity.CourseInfoActivity" />
         <activity android:name=".activity.ScoreAtivity" />
         <activity

@@ -6,14 +6,47 @@
     android:orientation="vertical"
     tools:context="com.display.hevttcdemo.activity.NewsWebActivity">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="22dp"
-        android:background="@color/colorPrimary" />
+    <include layout="@layout/layout_title_bar_back" />
 
-    <WebView
-        android:id="@+id/wv_news"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_news_web_logo"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:id="@+id/tv_news_web_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="我是标题"
+                android:textColor="#000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_news_web_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="我是时间" />
+
+            <TextView
+                android:id="@+id/tv_news_web_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="我是内容"
+                android:textColor="#444" />
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>

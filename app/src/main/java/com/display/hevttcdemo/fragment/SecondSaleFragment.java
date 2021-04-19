@@ -25,10 +25,10 @@ import com.display.hevttcdemo.utils.ToastUtil;
 import xyz.zpayh.adapter.OnItemClickListener;
 
 /**
- * @ 创建时间: 2017/9/14 on 14:29.
+ * @ 创建时间: 2021/9/14 on 14:29.
  * @ 描述：二手交易 【换点银子】
  * 用户想要出手二手物品， 展示买的条目列表
- * @ 作者: vchao
+ * @ 作者：zhangkejin
  */
 public class SecondSaleFragment extends BaseFragment {
 

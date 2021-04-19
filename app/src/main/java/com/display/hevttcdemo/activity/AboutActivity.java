@@ -4,9 +4,9 @@ package com.display.hevttcdemo.activity;
 import com.display.hevttcdemo.R;
 
 /**
- * @ 创建时间: 2017/6/18 on 17:12.
+ * @ 创建时间: 2021/6/18 on 17:12.
  * @ 描述：关于界面
- * @ 作者: vchao
+ * @ 作者：zhangkejin
  */
 public class AboutActivity extends BaseActivity {
 

@@ -19,9 +19,9 @@ import com.display.hevttcdemo.utils.ColorUtil;
 import com.display.hevttcdemo.utils.DpUtil;
 
 /**
- * @ 创建时间: 2017/9/18 on 22:28.
+ * @ 创建时间: 2021/9/18 on 22:28.
  * @ 描述：RecycleView分割线
- * @ 作者: vchao
+ * @ 作者：zhangkejin
  */
 
 public class CustomItemDecoration extends RecyclerView.ItemDecoration {

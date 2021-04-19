@@ -4,9 +4,9 @@ import xyz.zpayh.adapter.BaseMultiAdapter;
 import xyz.zpayh.adapter.BaseViewHolder;
 
 /**
- * @ 创建时间: 2017/9/20 on 16:14.
+ * @ 创建时间: 2021/9/20 on 16:14.
  * @ 描述：通用适配器
- * @ 作者: vchao
+ * @ 作者：zhangkejin
  */
 public class GeneralAdapter extends BaseMultiAdapter {
     @Override

@@ -14,7 +14,7 @@ import com.display.hevttcdemo.R;
 import com.display.hevttcdemo.utils.ToastUtil;
 
 /**
- * 创建日期:2017/8/4 on 11:34
+ * 创建日期:2021/8/4 on 11:34
  * 描述:加载对话框
  *
  * @ author: vchao  blog: http://blog.csdn.net/zheng_weichao

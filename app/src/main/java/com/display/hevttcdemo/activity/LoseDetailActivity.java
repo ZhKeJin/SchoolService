@@ -18,9 +18,9 @@ import com.display.hevttcdemo.utils.LogUtils;
 import com.display.hevttcdemo.utils.ToastUtil;
 
 /**
- * @ 创建时间: 2017/10/3 on 16:03.
+ * @ 创建时间: 2021/10/3 on 16:03.
  * @ 描述：失物招领详情页面
- * @ 作者: vchao
+ * @ 作者：zhangkejin
  */
 public class LoseDetailActivity extends BaseActivity {
     @BindView(R.id.tv_detail_lose_title)

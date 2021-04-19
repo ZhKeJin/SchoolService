@@ -12,9 +12,9 @@ import xyz.zpayh.adapter.BaseViewHolder;
 import xyz.zpayh.adapter.IMultiItem;
 
 /**
- * @ 创建时间: 2017/10/3 on 22:31.
+ * @ 创建时间: 2021/10/3 on 22:31.
  * @ 描述：二手交易
- * @ 作者: vchao
+ * @ 作者：zhangkejin
  */
 public class SaleItem extends BmobObject implements Serializable, IMultiItem {
     private String title;

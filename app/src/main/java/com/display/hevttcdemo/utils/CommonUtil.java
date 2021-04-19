@@ -13,9 +13,9 @@ import java.util.List;
 import com.display.hevttcdemo.bean.Teacher;
 
 /**
- * @ 创建时间: 2017/9/18 on 22:13.
+ * @ 创建时间: 2021/9/18 on 22:13.
  * @ 描述：
- * @ 作者: vchao
+ * @ 作者：zhangkejin
  */
 
 public class CommonUtil {

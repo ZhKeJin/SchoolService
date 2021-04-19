@@ -12,9 +12,9 @@ import xyz.zpayh.adapter.BaseViewHolder;
 import xyz.zpayh.adapter.IMultiItem;
 
 /**
- * @ 创建时间: 2017/10/1 on 23:34.
+ * @ 创建时间: 2021/10/1 on 23:34.
  * @ 描述：找东西
- * @ 作者: vchao
+ * @ 作者：zhangkejin
  */
 
 public class FindItem extends BmobObject implements IMultiItem, Serializable {

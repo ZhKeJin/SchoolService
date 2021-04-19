@@ -32,9 +32,9 @@ import butterknife.OnClick;
 import xyz.zpayh.adapter.OnItemClickListener;
 
 /**
- * @ 创建时间: 2017/7/21 on 19:39.
+ * @ 创建时间: 2021/7/21 on 19:39.
  * @ 描述：主页面fragment
- * @ 作者: vchao
+ * @ 作者：zhangkejin
  */
 public class TabHomeFragment extends BaseFragment {
 

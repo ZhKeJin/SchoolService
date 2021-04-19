@@ -21,35 +21,35 @@ public class ReviewTestActivity extends BaseActivity {
         switch (view.getId()) {
             //            点击开始答题，则带参传递，跳转页面，默认选择题
             case R.id.btn_mnks:
-                // TODO: 2017/6/13 开始答题
+                // TODO: 2021/6/13 开始答题
                 Intent intent1 = new Intent(ReviewTestActivity.this, AnswerActivity.class);
                 intent1.putExtra("type", 1);
                 startActivity(intent1);
                 break;
 
             case R.id.btn_point:
-                // TODO: 2017/6/13 选择题
+                // TODO: 2021/6/13 选择题
                 Intent intent3 = new Intent(ReviewTestActivity.this, AnswerActivity.class);
                 intent3.putExtra("type", 1);
                 startActivity(intent3);
                 break;
 
             case R.id.btn_law:
-                // TODO: 2017/6/13 判断题
+                // TODO: 2021/6/13 判断题
                 Intent intent4 = new Intent(ReviewTestActivity.this, AnswerActivity.class);
                 intent4.putExtra("type", 2);
                 startActivity(intent4);
                 break;
 
             case R.id.btn_cheats:
-                // TODO: 2017/6/13 简答题
+                // TODO: 2021/6/13 简答题
                 Intent intent5 = new Intent(ReviewTestActivity.this, AnswerActivity.class);
                 intent5.putExtra("type", 3);
                 startActivity(intent5);
                 break;
 
             case R.id.btn_collection:
-                // TODO: 2017/6/13 关于
+                // TODO: 2021/6/13 关于
                 Intent intent6 = new Intent(ReviewTestActivity.this, AboutActivity.class);
                 startActivity(intent6);
                 break;

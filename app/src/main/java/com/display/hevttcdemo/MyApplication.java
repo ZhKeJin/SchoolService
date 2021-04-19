@@ -20,9 +20,9 @@ import cn.bmob.v3.Bmob;
 import cn.bmob.v3.BmobConfig;
 
 /**
- * @ 创建时间: 2017/6/10 on 17:36.
+ * @ 创建时间: 2021/6/10 on 17:36.
  * @ 描述：MyApplication
- * @ 作者: vchao
+ * @ 作者：zhangkejin
  */
 public class MyApplication extends Application {
 
@@ -68,7 +68,7 @@ public class MyApplication extends Application {
         //设置appkey
         .setApplicationId(Constant.BMOB_APP_KEY)
         //请求超时时间（单位为秒）：默认15s
-        .setConnectTimeout(30)
+        .setConnectTimeout(60)
         //文件分片上传时每片的大小（单位字节），默认512*1024
         .setUploadBlockSize(1024*1024)
         //文件的过期时间(单位为秒)：默认1800s

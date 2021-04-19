@@ -25,10 +25,10 @@ import cn.bmob.v3.listener.FindListener;
 import xyz.zpayh.adapter.OnItemClickListener;
 
 /**
- * @ 创建时间: 2017/9/14 on 15:29.
+ * @ 创建时间: 2021/9/14 on 15:29.
  * @ 描述：【寻物启事】
  * 丢东西了 ==> 要找东西  ==> 看谁捡了 ===>  展示捡到的东西的列表
- * @ 作者: vchao
+ * @ 作者：zhangkejin
  */
 public class FindThingFragment extends BaseFragment {
     @BindView(R.id.recyclerview)

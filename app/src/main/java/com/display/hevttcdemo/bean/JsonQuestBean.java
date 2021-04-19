@@ -3,9 +3,9 @@ package com.display.hevttcdemo.bean;
 import java.util.List;
 
 /**
- * @ 创建时间: 2017/6/15 on 0:51.
+ * @ 创建时间: 2021/6/15 on 0:51.
  * @ 描述：答题模块（开发中……）
- * @ 作者: vchao
+ * @ 作者：zhangkejin
  */
 
 public class JsonQuestBean {

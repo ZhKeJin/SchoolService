@@ -26,9 +26,9 @@ import cn.bmob.v3.listener.FindListener;
 import xyz.zpayh.adapter.OnItemClickListener;
 
 /**
- * @ 创建时间: 2017/10/3 on 12:49.
+ * @ 创建时间: 2021/10/3 on 12:49.
  * @ 描述：新闻列表页面
- * @ 作者: vchao
+ * @ 作者：zhangkejin
  */
 public class NewsListFragment extends BaseFragment {
 
@@ -83,7 +83,8 @@ public class NewsListFragment extends BaseFragment {
                         BmobQuery<NewsBean> query = new BmobQuery<NewsBean>();
                         query.order("-time");
                         query.setLimit(10);
-                        query.addWhereEqualTo("kind", mTitleType);
+                        query.addWhereEqualTo("tag", mTitleType);
+                        LogUtils.e("类型：" + mTitleType);
                         query.setSkip(10 * refreshCount);
                         //执行查询方法
                         query.findObjects(new FindListener<NewsBean>() {
@@ -125,7 +126,9 @@ public class NewsListFragment extends BaseFragment {
         newsBeanList = new ArrayList<>();
         BmobQuery<NewsBean> query = new BmobQuery<NewsBean>();
         query.order("-time");
-        query.addWhereEqualTo("kind", mTitleType);
+        query.addWhereEqualTo("tag", mTitleType);
+        LogUtils.e("类型：" + mTitleType);
+
         query.setLimit(10);
         query.findObjects(new FindListener<NewsBean>() {
             @Override

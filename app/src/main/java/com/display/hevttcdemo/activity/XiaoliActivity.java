@@ -13,9 +13,9 @@ import com.display.hevttcdemo.utils.DateUtil;
 import com.display.hevttcdemo.utils.TimeUtil;
 
 /**
- * @ 创建时间: 2017/10/3 on 12:49.
+ * @ 创建时间: 2021/10/3 on 12:49.
  * @ 描述：校历页面
- * @ 作者: vchao
+ * @ 作者：zhangkejin
  */
 public class XiaoliActivity extends BaseActivity {
 

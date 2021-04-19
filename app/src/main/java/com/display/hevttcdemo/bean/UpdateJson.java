@@ -1,9 +1,9 @@
 package com.display.hevttcdemo.bean;
 
 /**
- * @ 创建时间: 2017/10/4 on 19:36.
+ * @ 创建时间: 2021/10/4 on 19:36.
  * @ 描述：检查更新json bean
- * @ 作者: vchao
+ * @ 作者：zhangkejin
  */
 
 public class UpdateJson {

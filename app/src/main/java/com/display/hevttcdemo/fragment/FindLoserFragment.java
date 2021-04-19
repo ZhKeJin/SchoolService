@@ -25,10 +25,10 @@ import cn.bmob.v3.listener.FindListener;
 import xyz.zpayh.adapter.OnItemClickListener;
 
 /**
- * @ 创建时间: 2017/9/14 on 15:29.
+ * @ 创建时间: 2021/9/14 on 15:29.
  * @ 描述：【失物招领】
  * 捡东西了 ==> 寻找失主 ==> 看谁丢了 ===>  展示 丢东西的人 列表
- * @ 作者: vchao
+ * @ 作者：zhangkejin
  */
 public class FindLoserFragment extends BaseFragment {
 

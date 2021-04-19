@@ -3,9 +3,9 @@ package com.display.hevttcdemo.bean;
 import cn.bmob.v3.BmobObject;
 
 /**
- * @ 创建时间: 2017/9/18 on 22:04.
+ * @ 创建时间: 2021/9/18 on 22:04.
  * @ 描述：校园通讯录bean类型
- * @ 作者: vchao
+ * @ 作者：zhangkejin
  */
 
 public class Teacher extends BmobObject {

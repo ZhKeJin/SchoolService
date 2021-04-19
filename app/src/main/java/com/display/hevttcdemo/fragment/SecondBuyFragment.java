@@ -24,10 +24,10 @@ import com.display.hevttcdemo.utils.ToastUtil;
 import xyz.zpayh.adapter.OnItemClickListener;
 
 /**
- * @ 创建时间: 2017/9/14 on 14:20.
+ * @ 创建时间: 2021/9/14 on 14:20.
  * @ 描述：二手交易 【淘点宝贝】
  * 用户想要买二手物品， 展示卖的条目列表
- * @ 作者: vchao
+ * @ 作者：zhangkejin
  */
 public class SecondBuyFragment extends BaseFragment {
     @BindView(R.id.recyclerview)

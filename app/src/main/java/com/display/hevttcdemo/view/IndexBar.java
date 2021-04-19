@@ -11,9 +11,9 @@ import android.view.ViewGroup;
 import com.display.hevttcdemo.utils.ColorUtil;
 
 /**
- * @ 创建时间: 2017/9/19 on 09:49.
+ * @ 创建时间: 2021/9/19 on 09:49.
  * @ 描述：联系人索引
- * @ 作者: vchao
+ * @ 作者：zhangkejin
  */
 
 public class IndexBar extends ViewGroup {

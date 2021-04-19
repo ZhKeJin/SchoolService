@@ -16,9 +16,9 @@ import com.display.hevttcdemo.utils.LogUtils;
 import butterknife.ButterKnife;
 
 /**
- * @ 创建时间: 2017/5/17 on 11:16.
+ * @ 创建时间: 2021/5/17 on 11:16.
  * @ 描述：Activity基类
- * @ 作者: vchao
+ * @ 作者：zhangkejin
  */
 public abstract class BaseAppCompatActivity extends AppCompatActivity {
 

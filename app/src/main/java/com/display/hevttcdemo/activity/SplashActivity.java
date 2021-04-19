@@ -12,9 +12,9 @@ import com.display.hevttcdemo.R;
 import com.display.hevttcdemo.utils.LogUtils;
 
 /**
- * @ 创建时间: 2017/8/23 on 22:09.
+ * @ 创建时间: 2021/8/23 on 22:09.
  * @ 描述：闪屏页面
- * @ 作者: vchao
+ * @ 作者：zhangkejin
  */
 public class SplashActivity extends BaseActivity {
 

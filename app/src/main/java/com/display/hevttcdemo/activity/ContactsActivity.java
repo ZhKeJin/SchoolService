@@ -27,9 +27,9 @@ import com.display.hevttcdemo.view.CustomItemDecoration;
 import com.display.hevttcdemo.view.SideBar;
 
 /**
- * @ 创建时间: 2017/9/28 on 00:12.
+ * @ 创建时间: 2021/9/28 on 00:12.
  * @ 描述：校园通讯录页面
- * @ 作者: vchao
+ * @ 作者：zhangkejin
  */
 public class ContactsActivity extends BaseActivity {
 

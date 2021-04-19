@@ -16,7 +16,7 @@ import com.display.hevttcdemo.R;
 import com.display.hevttcdemo.activity.ChooseXndActivity;
 
 /**
- * Created by EsauLu on 2017/2/27.
+ * Created by EsauLu on 2021/2/27.
  */
 
 public class XndAdapter extends ArrayAdapter<String> {

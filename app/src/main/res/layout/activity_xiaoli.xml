@@ -31,7 +31,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="50dp"
             android:gravity="center_horizontal"
-            android:text="2017年09月22日"
+            android:text="2021年09月22日"
             android:textColor="@color/white"
             android:textSize="30sp" />
 
@@ -57,7 +57,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="15dp"
-            android:text="2017-2018学年第一学期"
+            android:text="2020-2021学年第一学期"
             android:textColor="#fff"
             android:textSize="16sp" />
 

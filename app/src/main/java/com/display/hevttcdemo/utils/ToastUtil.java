@@ -12,9 +12,9 @@ import com.display.hevttcdemo.MyApplication;
 import com.display.hevttcdemo.R;
 
 /**
- * @ 创建时间: 2017/10/2 on 8:29.
+ * @ 创建时间: 2021/10/2 on 8:29.
  * @ 描述：吐司工具类
- * @ 作者: vchao
+ * @ 作者：zhangkejin
  */
 
 public class ToastUtil {

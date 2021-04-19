@@ -8,9 +8,9 @@ import xyz.zpayh.adapter.BaseViewHolder;
 import xyz.zpayh.adapter.IMultiItem;
 
 /**
- * @ 创建时间: 2017/5/14 on 9:10.
+ * @ 创建时间: 2021/5/14 on 9:10.
  * @ 描述：模块条目
- * @ 作者: vchao
+ * @ 作者：zhangkejin
  */
 
 public class ModuleItem implements IMultiItem {

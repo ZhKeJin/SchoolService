@@ -35,9 +35,9 @@ import okhttp3.Call;
 import okhttp3.Response;
 
 /**
- * @ 创建时间: 2017/6/13 on 17:08.
+ * @ 创建时间: 2021/6/13 on 17:08.
  * @ 描述：回答界面
- * @ 作者: vchao
+ * @ 作者：zhangkejin
  */
 public class AnswerActivity extends BaseActivity implements Chronometer.OnChronometerTickListener {
 
@@ -242,7 +242,7 @@ public class AnswerActivity extends BaseActivity implements Chronometer.OnChrono
         builder.setPositiveButton("确定", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                // TODO: 2017/6/14 交卷操作
+                // TODO: 2021/6/14 交卷操作
 //                计算分数
                 int grade = 0;
 //                判断题

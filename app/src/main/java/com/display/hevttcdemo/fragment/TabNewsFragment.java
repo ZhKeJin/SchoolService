@@ -13,9 +13,9 @@ import com.display.hevttcdemo.adapter.MyPagerAdapter;
 import com.display.hevttcdemo.constant.Config;
 
 /**
- * @ 创建时间: 2017/9/21 on 19:39.
+ * @ 创建时间: 2021/9/21 on 19:39.
  * @ 描述：新闻页面fragment
- * @ 作者: vchao
+ * @ 作者：zhangkejin
  */
 public class TabNewsFragment extends BaseFragment {
 

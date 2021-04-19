@@ -14,9 +14,9 @@ import android.graphics.drawable.shapes.RectShape;
 import android.graphics.drawable.shapes.RoundRectShape;
 
 /**
- * @ 创建时间: 2017/9/18 on 22:06.
+ * @ 创建时间: 2021/9/18 on 22:06.
  * @ 描述：
- * @ 作者: vchao
+ * @ 作者：zhangkejin
  */
 
 public class TextDrawable extends ShapeDrawable {

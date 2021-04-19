@@ -1,9 +1,9 @@
 package com.display.hevttcdemo.utils;
 
 /**
- * @ 创建时间: 2017/9/22 on 22:46.
+ * @ 创建时间: 2021/9/22 on 22:46.
  * @ 描述：日期工具类
- * @ 作者: vchao
+ * @ 作者：zhangkejin
  */
 
 import java.util.Calendar;

@@ -17,9 +17,9 @@ import java.util.List;
 import butterknife.BindView;
 
 /**
- * @ 创建时间: 2017/5/21 on 12:38.
+ * @ 创建时间: 2021/5/21 on 12:38.
  * @ 描述：底部标签页面基类
- * @ 作者: vchao
+ * @ 作者：zhangkejin
  */
 public abstract class BottomTabBaseActivity extends BaseAppCompatActivity {
 

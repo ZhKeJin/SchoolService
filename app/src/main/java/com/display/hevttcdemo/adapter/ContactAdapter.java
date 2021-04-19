@@ -19,9 +19,9 @@ import com.display.hevttcdemo.utils.ColorGenerator;
 import com.display.hevttcdemo.utils.TextDrawable;
 
 /**
- * @ 创建时间: 2017/9/24 on 22:02.
+ * @ 创建时间: 2021/9/24 on 22:02.
  * @ 描述：校园通讯录适配器
- * @ 作者: vchao
+ * @ 作者：zhangkejin
  */
 public class ContactAdapter extends RecyclerView.Adapter<ContactAdapter.MyRecycleHolder> implements View.OnClickListener {
 

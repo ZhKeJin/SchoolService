@@ -13,9 +13,9 @@ import androidx.annotation.Nullable;
 import com.display.hevttcdemo.utils.DpUtil;
 
 /**
- * @ 创建时间: 2017/9/18 on 22:32.
+ * @ 创建时间: 2021/9/18 on 22:32.
  * @ 描述：联系人快速定位导航条
- * @ 作者: vchao
+ * @ 作者：zhangkejin
  */
 
 public class SideBar extends View {

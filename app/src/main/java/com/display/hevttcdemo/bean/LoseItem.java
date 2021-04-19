@@ -12,9 +12,9 @@ import xyz.zpayh.adapter.BaseViewHolder;
 import xyz.zpayh.adapter.IMultiItem;
 
 /**
- * @ 创建时间: 2017/10/1 on 22:31.
+ * @ 创建时间: 2021/10/1 on 22:31.
  * @ 描述：实物招领，丢失东西
- * @ 作者: vchao
+ * @ 作者：zhangkejin
  */
 public class LoseItem extends BmobObject implements Serializable, IMultiItem {
     private String title;

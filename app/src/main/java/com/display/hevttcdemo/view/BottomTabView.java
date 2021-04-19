@@ -18,9 +18,9 @@ import java.util.List;
 import com.display.hevttcdemo.R;
 
 /**
- * @ 创建时间: 2017/5/21 on 18:15.
+ * @ 创建时间: 2021/5/21 on 18:15.
  * @ 描述：自定义底部标签导航栏
- * @ 作者: vchao
+ * @ 作者：zhangkejin
  */
 public class BottomTabView extends LinearLayout {
 

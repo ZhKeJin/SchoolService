@@ -9,9 +9,9 @@ import java.io.IOException;
 import java.io.InputStream;
 
 /**
- * @ 创建时间: 2017/4/29 on 16:35.
+ * @ 创建时间: 2021/4/29 on 16:35.
  * @ 描述：数据库加载工具类
- * @ 作者: vchao
+ * @ 作者：zhangkejin
  */
 public class InitDBUtils {
     public static void initDB(String DBname, Activity mactivity) {

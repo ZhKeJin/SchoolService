@@ -5,9 +5,9 @@ import android.util.Log;
 import com.display.hevttcdemo.BuildConfig;
 
 /**
- * @ 创建时间: 2017/8/23 on 13:25.
+ * @ 创建时间: 2021/8/23 on 13:25.
  * @ 描述：log工具类
- * @ 作者: vchao
+ * @ 作者：zhangkejin
  */
 public class LogUtils {
     static boolean islog = BuildConfig.DEBUG;//    是否打印log

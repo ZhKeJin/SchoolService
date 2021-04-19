@@ -6,9 +6,9 @@ import com.display.hevttcdemo.bean.QuestBean;
 import com.display.hevttcdemo.bean.QuestBeanDao;
 
 /**
- * @ 创建时间: 2017/6/11 on 9:48.
+ * @ 创建时间: 2021/6/11 on 9:48.
  * @ 描述：
- * @ 作者: vchao
+ * @ 作者：zhangkejin
  */
 
 public class LoveDao {

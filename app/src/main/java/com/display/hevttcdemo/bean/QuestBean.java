@@ -5,9 +5,9 @@ import org.greenrobot.greendao.annotation.Generated;
 import org.greenrobot.greendao.annotation.Id;
 
 /**
- * @ 创建时间: 2017/6/13 on 17:12.
+ * @ 创建时间: 2021/6/13 on 17:12.
  * @ 描述：greenDao 生成答题数据库（答题模块开发中……）
- * @ 作者: vchao
+ * @ 作者：zhangkejin
  */
 @Entity
 public class QuestBean {

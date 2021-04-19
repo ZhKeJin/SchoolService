@@ -14,9 +14,9 @@ import java.io.File;
 import com.display.hevttcdemo.R;
 
 /**
- * @ 创建时间: 2017/9/28 on 19:39.
+ * @ 创建时间: 2021/9/28 on 19:39.
  * @ 描述：Glide图片加载
- * @ 作者: vchao
+ * @ 作者：zhangkejin
  */
 public class GlideImageLoader extends com.youth.banner.loader.ImageLoader implements ImageLoader {
 

@@ -18,9 +18,9 @@ import com.display.hevttcdemo.utils.ToastUtil;
 import com.display.hevttcdemo.view.LoadDialog;
 
 /**
- * @ 创建时间: 2017/10/2 on 17:12.
+ * @ 创建时间: 2021/10/2 on 17:12.
  * @ 描述：意见反馈界面
- * @ 作者: vchao
+ * @ 作者：zhangkejin
  */
 public class FeedbackActivity extends BaseActivity {
 

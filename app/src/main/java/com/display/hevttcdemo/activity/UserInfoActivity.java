@@ -36,9 +36,9 @@ import com.display.hevttcdemo.utils.ToastUtil;
 import com.display.hevttcdemo.view.LoadDialog;
 
 /**
- * @ 创建时间: 2017/5/23 on 22:09.
+ * @ 创建时间: 2021/5/23 on 22:09.
  * @ 描述：用户信息页面
- * @ 作者: vchao
+ * @ 作者：zhangkejin
  */
 public class UserInfoActivity extends BaseActivity {
 

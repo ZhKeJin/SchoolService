@@ -15,7 +15,7 @@
             android:layout_height="wrap_content"
             android:textSize="20sp"
             android:layout_gravity="center_vertical"
-            android:text="2016-2017" />
+            android:text="2020-2021" />
 
         <TextView
             android:id="@+id/tv_xnd"

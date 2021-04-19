@@ -19,9 +19,9 @@ import com.display.hevttcdemo.R;
 import com.display.hevttcdemo.activity.LoseAddActivity;
 
 /**
- * @ 创建时间: 2017/9/27 on 10:52.
+ * @ 创建时间: 2021/9/27 on 10:52.
  * @ 描述：图片选择器适配器
- * @ 作者: vchao
+ * @ 作者：zhangkejin
  */
 public class ImagePickerAdapter extends RecyclerView.Adapter<ImagePickerAdapter.SelectedPicViewHolder> {
     private int maxImgCount;

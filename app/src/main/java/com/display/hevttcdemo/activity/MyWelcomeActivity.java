@@ -8,9 +8,9 @@ import com.stephentuso.welcome.WelcomeConfiguration;
 import com.display.hevttcdemo.R;
 
 /**
- * @ 创建时间: 2017/5/23 on 22:09.
+ * @ 创建时间: 2021/5/23 on 22:09.
  * @ 描述：引导欢迎页面
- * @ 作者: vchao
+ * @ 作者：zhangkejin
  */
 public class MyWelcomeActivity extends WelcomeActivity {
 

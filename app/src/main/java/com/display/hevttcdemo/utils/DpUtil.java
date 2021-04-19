@@ -5,9 +5,9 @@ import android.content.Context;
 import android.util.DisplayMetrics;
 
 /**
- * @ 创建时间: 2017/9/18 on 22:29.
+ * @ 创建时间: 2021/9/18 on 22:29.
  * @ 描述：适配工具类
- * @ 作者: vchao
+ * @ 作者：zhangkejin
  */
 
 public class DpUtil {
