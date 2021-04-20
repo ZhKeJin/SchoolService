@@ -37,8 +37,8 @@ public class TabMyFragment extends BaseFragment {
 
     @BindView(R.id.tv_info_username)
     TextView tvInfoUsername;
-    @BindView(R.id.tv_info_state)
-    TextView tvInfoState;
+//    @BindView(R.id.tv_info_state)
+//    TextView tvInfoState;
 
     @Override
     protected int getLayoutId() {
@@ -51,13 +51,13 @@ public class TabMyFragment extends BaseFragment {
         if (!TextUtils.isEmpty(user.getUsername())) {
             tvInfoUsername.setText(user.getUsername());
         }
-        if (!TextUtils.isEmpty(user.getStuno())) {
-            tvInfoState.setText("已认证");
-            tvInfoState.setBackgroundColor(getResources().getColor(R.color.orange));
-        } else {
-            tvInfoState.setText("未认证");
-            tvInfoState.setBackgroundColor(getResources().getColor(R.color.gray));
-        }
+//        if (!TextUtils.isEmpty(user.getStuno())) {
+//            tvInfoState.setText("已认证");
+//            tvInfoState.setBackgroundColor(getResources().getColor(R.color.orange));
+//        } else {
+//            tvInfoState.setText("未认证");
+//            tvInfoState.setBackgroundColor(getResources().getColor(R.color.gray));
+//        }
 
     }
 
@@ -67,7 +67,7 @@ public class TabMyFragment extends BaseFragment {
         startActivity(new Intent(mActivity, LoginActivity.class));
     }
 
-    @OnClick({R.id.ll_my_info, R.id.ll_my_setting, R.id.ll_my_update, R.id.ll_my_about, R.id.ll_my_feedback, R.id.btn_my_logout, R.id.ll_my_quanyi})
+    @OnClick({R.id.ll_my_info, R.id.ll_my_about, R.id.ll_my_feedback, R.id.btn_my_logout, R.id.ll_my_quanyi})
     public void onViewClicked(View view) {
         Intent intent;
         switch (view.getId()) {
@@ -79,26 +79,26 @@ public class TabMyFragment extends BaseFragment {
                 intent = new Intent(mActivity, ComplaintsDetailActivity.class);
                 startActivity(intent);
                 break;
-            case R.id.ll_my_setting:
-                // TODO: 2021/10/4 跳转设置页面
-                break;
-            case R.id.ll_my_update:
-                LoadDialog.show(mActivity, "检查更新中……");
-                OkGo.get(MyUrl.URL_UPDATE)
-                        .execute(new StringCallback() {
-                            @Override
-                            public void onSuccess(String s, Call call, Response response) {
-                                UpdateJson updateJson = new Gson().fromJson(s, UpdateJson.class);
-                                if ("200".equals(updateJson.getCode())) {
-                                    ToastUtil.showShort("已经有更新了，请进行更新！");
-                                } else {
-                                    ToastUtil.showShort("已经是最新版本！");
-                                }
-                                LoadDialog.dismiss(mActivity);
-                            }
-                        });
-
-                break;
+//            case R.id.ll_my_setting:
+//                // TODO: 2021/10/4 跳转设置页面
+//                break;
+//            case R.id.ll_my_update:
+//                LoadDialog.show(mActivity, "检查更新中……");
+//                OkGo.get(MyUrl.URL_UPDATE)
+//                        .execute(new StringCallback() {
+//                            @Override
+//                            public void onSuccess(String s, Call call, Response response) {
+//                                UpdateJson updateJson = new Gson().fromJson(s, UpdateJson.class);
+//                                if ("200".equals(updateJson.getCode())) {
+//                                    ToastUtil.showShort("已经有更新了，请进行更新！");
+//                                } else {
+//                                    ToastUtil.showShort("已经是最新版本！");
+//                                }
+//                                LoadDialog.dismiss(mActivity);
+//                            }
+//                        });
+//
+//                break;
             case R.id.ll_my_about:
                 intent = new Intent(mActivity, AboutActivity.class);
                 startActivity(intent);

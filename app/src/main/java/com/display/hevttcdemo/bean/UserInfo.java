@@ -1,22 +1,14 @@
 package com.display.hevttcdemo.bean;
 
-import java.io.Serializable;
-
 import cn.bmob.v3.BmobObject;
-import cn.bmob.v3.BmobUser;
 
-/**
- * @ 创建时间: 2021/9/18 on 18:47.
- * @ 描述：用户类
- * @ 作者：zhangkejin
- */
-
-public class MyUser extends BmobUser implements Serializable {
+public class UserInfo extends BmobObject {
     private String stuno;
     private String sex;
     private String yuan;
     private String clazz;
     private String name;
+    private String phoneNum;
 
     public String getSex() {
         return sex;
@@ -56,5 +48,13 @@ public class MyUser extends BmobUser implements Serializable {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getPhoneNum() {
+        return phoneNum;
+    }
+
+    public void setPhoneNum(String phoneNum) {
+        this.phoneNum = phoneNum;
     }
 }

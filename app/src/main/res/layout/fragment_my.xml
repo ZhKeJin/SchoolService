@@ -29,17 +29,17 @@
             android:textColor="#000"
             android:textSize="16sp" />
 
-        <TextView
-            android:id="@+id/tv_info_state"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="5dp"
-            android:background="@color/orange"
-            android:padding="3dp"
-            android:text="已认证"
-            android:textColor="#FFF"
-            android:textSize="11sp" />
+<!--        <TextView-->
+<!--            android:id="@+id/tv_info_state"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="center_horizontal"-->
+<!--            android:layout_marginTop="5dp"-->
+<!--            android:background="@color/orange"-->
+<!--            android:padding="3dp"-->
+<!--            android:text="已认证"-->
+<!--            android:textColor="#FFF"-->
+<!--            android:textSize="11sp" />-->
 
     </LinearLayout>
 
@@ -56,8 +56,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:paddingBottom="14dp"
-            android:paddingTop="14dp">
+            android:paddingBottom="17dp"
+            android:paddingTop="17dp">
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -93,8 +93,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:paddingBottom="14dp"
-            android:paddingTop="14dp">
+            android:paddingBottom="17dp"
+            android:paddingTop="17dp">
 
             <ImageView
                 android:layout_width="30dp"
@@ -126,80 +126,80 @@
         <LinearLayout style="@style/common_horizontal_division_line_style" />
 
 
-        <LinearLayout
-            android:id="@+id/ll_my_setting"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:paddingBottom="14dp"
-            android:paddingTop="14dp"
-            android:visibility="gone">
+<!--        <LinearLayout-->
+<!--            android:id="@+id/ll_my_setting"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:paddingBottom="17dp"-->
+<!--            android:paddingTop="17dp">-->
+<!--            android:visibility="gone">-->
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="30dp"
-                android:layout_gravity="center_vertical"
-                android:layout_weight="1"
-                android:gravity="left"
-                android:lines="1"
-                android:src="@mipmap/center_icon_setting_nor" />
+<!--            <ImageView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="30dp"-->
+<!--                android:layout_gravity="center_vertical"-->
+<!--                android:layout_weight="1"-->
+<!--                android:gravity="left"-->
+<!--                android:lines="1"-->
+<!--                android:src="@mipmap/center_icon_setting_nor" />-->
 
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:layout_weight="10"
-                android:gravity="left"
-                android:lines="1"
-                android:maxLength="20"
-                android:text="设置"
-                android:textColor="?android:attr/panelColorForeground"
-                android:textSize="17sp" />
+<!--            <TextView-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="center_vertical"-->
+<!--                android:layout_weight="10"-->
+<!--                android:gravity="left"-->
+<!--                android:lines="1"-->
+<!--                android:maxLength="20"-->
+<!--                android:text="设置"-->
+<!--                android:textColor="?android:attr/panelColorForeground"-->
+<!--                android:textSize="17sp" />-->
 
-            <ImageView
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:background="@drawable/image_bg" />
-        </LinearLayout>
+<!--            <ImageView-->
+<!--                android:layout_width="30dp"-->
+<!--                android:layout_height="30dp"-->
+<!--                android:background="@drawable/image_bg" />-->
+<!--        </LinearLayout>-->
 
         <LinearLayout style="@style/common_horizontal_division_line_style" />
 
-        <LinearLayout
-            android:id="@+id/ll_my_update"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:paddingBottom="14dp"
-            android:paddingTop="14dp">
+<!--        <LinearLayout-->
+<!--            android:id="@+id/ll_my_update"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:paddingBottom="14dp"-->
+<!--            android:paddingTop="14dp">-->
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="30dp"
-                android:layout_gravity="center_vertical"
-                android:layout_weight="1"
-                android:gravity="left"
-                android:lines="1"
-                android:paddingBottom="3dp"
-                android:paddingTop="3dp"
-                android:src="@mipmap/ic_update" />
+<!--            <ImageView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="30dp"-->
+<!--                android:layout_gravity="center_vertical"-->
+<!--                android:layout_weight="1"-->
+<!--                android:gravity="left"-->
+<!--                android:lines="1"-->
+<!--                android:paddingBottom="3dp"-->
+<!--                android:paddingTop="3dp"-->
+<!--                android:src="@mipmap/ic_update" />-->
 
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:layout_weight="10"
-                android:gravity="left"
-                android:lines="1"
-                android:maxLength="20"
-                android:text="检查更新"
-                android:textColor="?android:attr/panelColorForeground"
-                android:textSize="17sp" />
+<!--            <TextView-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="center_vertical"-->
+<!--                android:layout_weight="10"-->
+<!--                android:gravity="left"-->
+<!--                android:lines="1"-->
+<!--                android:maxLength="20"-->
+<!--                android:text="检查更新"-->
+<!--                android:textColor="?android:attr/panelColorForeground"-->
+<!--                android:textSize="17sp" />-->
 
-            <ImageView
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:background="@drawable/image_bg" />
-        </LinearLayout>
+<!--            <ImageView-->
+<!--                android:layout_width="30dp"-->
+<!--                android:layout_height="30dp"-->
+<!--                android:background="@drawable/image_bg" />-->
+<!--        </LinearLayout>-->
 
         <LinearLayout style="@style/common_horizontal_division_line_style" />
 
@@ -208,9 +208,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:paddingBottom="14dp"
-            android:paddingTop="14dp">
-
+            android:paddingBottom="17dp"
+            android:paddingTop="17dp">
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="30dp"
@@ -245,8 +244,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:paddingBottom="14dp"
-            android:paddingTop="14dp">
+            android:paddingBottom="17dp"
+            android:paddingTop="17dp">
 
             <ImageView
                 android:layout_width="wrap_content"

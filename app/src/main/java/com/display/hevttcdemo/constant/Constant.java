@@ -21,7 +21,7 @@ public class Constant {
     /**
      * 基础地址
      */
-    public static final String BASE_URL = "http://121.22.25.47/";
+    public static final String BASE_URL = "http://www.zfjw.xupt.edu.cn/jwglxt/xtgl/login_slogin.html";
 //    public static final String BASE_URL = "http://www.zfjw.xupt.edu.cn/jwglxt/xtgl/login_slogin.html";
 //	public static final String BASE_URL ="http://jw.jluzh.com/";
 

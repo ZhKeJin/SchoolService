@@ -217,6 +217,7 @@ public class LoseAddActivity extends BaseActivity implements ImagePickerAdapter.
                     } else {
                         FindItem bean = new FindItem();
                         MyUser user = BmobUser.getCurrentUser(MyUser.class);
+                        LogUtils.e(user.getUsername());
                         bean.setAuthor(user.getUsername());
                         bean.setContent(loseDesc);
                         bean.setTime(times);

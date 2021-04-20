@@ -29,7 +29,7 @@
             android:textColor="?android:attr/panelColorForeground"
             android:textSize="18sp" />
 
-        <TextView
+        <EditText
             android:id="@+id/tv_user_info_name"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -38,14 +38,15 @@
             android:gravity="right"
             android:lines="1"
             android:maxLength="20"
-            android:text="姓名"
+            android:text=""
+            android:background="@null"
             android:textColor="#aaaeb0"
             android:textSize="18sp" />
 
-        <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:background="@drawable/image_bg" />
+<!--        <ImageView-->
+<!--            android:layout_width="30dp"-->
+<!--            android:layout_height="30dp"-->
+<!--            android:background="@drawable/image_bg" />-->
     </LinearLayout>
 
     <LinearLayout
@@ -69,7 +70,7 @@
             android:textColor="?android:attr/panelColorForeground"
             android:textSize="18sp" />
 
-        <TextView
+        <EditText
             android:id="@+id/tv_user_info_sex"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -78,14 +79,15 @@
             android:gravity="right"
             android:lines="1"
             android:maxLength="20"
-            android:text="性别"
+            android:text=""
+            android:background="@null"
             android:textColor="#aaaeb0"
             android:textSize="18sp" />
 
-        <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:background="@drawable/image_bg" />
+<!--        <ImageView-->
+<!--            android:layout_width="30dp"-->
+<!--            android:layout_height="30dp"-->
+<!--            android:background="@drawable/image_bg" />-->
     </LinearLayout>
 
     <LinearLayout
@@ -109,7 +111,7 @@
             android:textColor="?android:attr/panelColorForeground"
             android:textSize="18sp" />
 
-        <TextView
+        <EditText
             android:id="@+id/tv_user_info_stuno"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -118,14 +120,15 @@
             android:gravity="right"
             android:lines="1"
             android:maxLength="20"
-            android:text="学号"
+            android:text=""
             android:textColor="#aaaeb0"
+            android:background="@null"
             android:textSize="18sp" />
 
-        <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:background="@drawable/image_bg" />
+<!--        <ImageView-->
+<!--            android:layout_width="30dp"-->
+<!--            android:layout_height="30dp"-->
+<!--            android:background="@drawable/image_bg" />-->
     </LinearLayout>
 
     <LinearLayout
@@ -162,10 +165,10 @@
             android:textColor="#aaaeb0"
             android:textSize="18sp" />
 
-        <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:background="@drawable/image_bg" />
+<!--        <ImageView-->
+<!--            android:layout_width="30dp"-->
+<!--            android:layout_height="30dp"-->
+<!--            android:background="@drawable/image_bg" />-->
     </LinearLayout>
 
     <LinearLayout
@@ -189,7 +192,7 @@
             android:textColor="?android:attr/panelColorForeground"
             android:textSize="18sp" />
 
-        <TextView
+        <EditText
             android:id="@+id/tv_user_info_yuan"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -198,14 +201,15 @@
             android:gravity="right"
             android:lines="1"
             android:maxLength="20"
-            android:text="院系"
+            android:text=""
+            android:background="@null"
             android:textColor="#aaaeb0"
             android:textSize="18sp" />
 
-        <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:background="@drawable/image_bg" />
+<!--        <ImageView-->
+<!--            android:layout_width="30dp"-->
+<!--            android:layout_height="30dp"-->
+<!--            android:background="@drawable/image_bg" />-->
     </LinearLayout>
 
     <LinearLayout
@@ -229,7 +233,7 @@
             android:textColor="?android:attr/panelColorForeground"
             android:textSize="18sp" />
 
-        <TextView
+        <EditText
             android:id="@+id/tv_user_info_class"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -238,14 +242,15 @@
             android:gravity="right"
             android:lines="1"
             android:maxLength="20"
-            android:text="专业"
+            android:text=""
+            android:background="@null"
             android:textColor="#aaaeb0"
             android:textSize="18sp" />
 
-        <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:background="@drawable/image_bg" />
+<!--        <ImageView-->
+<!--            android:layout_width="30dp"-->
+<!--            android:layout_height="30dp"-->
+<!--            android:background="@drawable/image_bg" />-->
     </LinearLayout>
 
     <LinearLayout
@@ -282,10 +287,10 @@
             android:textColor="#aaaeb0"
             android:textSize="18sp" />
 
-        <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:background="@drawable/image_bg" />
+<!--        <ImageView-->
+<!--            android:layout_width="30dp"-->
+<!--            android:layout_height="30dp"-->
+<!--            android:background="@drawable/image_bg" />-->
     </LinearLayout>
 
     <Button
@@ -293,5 +298,5 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
-        android:text="实名认证" />
+        android:text="更新信息" />
 </LinearLayout>

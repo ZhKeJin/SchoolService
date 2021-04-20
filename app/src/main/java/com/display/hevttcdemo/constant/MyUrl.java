@@ -19,9 +19,9 @@ public class MyUrl {
     //    获取问题网址
     public static final String URL_GETQUEST1 = "http://123.207.155.175:8080/Examine1/GetQuestionLet";
     //  学校官网
-    public static final String URL_HEVTTC = "http://www.hevttc.edu.cn/";
+    public static final String URL_HEVTTC = "http://www.xiyou.edu.cn/";
     //    腾讯街景
-    public static final String URL_QQMAP = "http://map.qq.com/#pano=11031132130703102635000&heading=327&pitch=11&zoom=1";
+    public static final String URL_QQMAP = "https://www.vrqjcs.com/p/db4633195739afca";
 
     public static final String URL_QueryBook = "http://www.niowoo.com/weixin.php/Home/Library/searchBook/library_id/126";
     public static final String URL_Libray = "http://mc.m.5read.com/weixin/customize_hpindex.jspx?wxProductId=758&hptype=2";
