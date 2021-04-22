@@ -48,25 +48,25 @@
             android:dropDownWidth="150dp"
             android:gravity="center_horizontal" />
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_weight="0.35"
-            android:gravity="right|center_vertical">
+<!--        <LinearLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_weight="0.35"-->
+<!--            android:gravity="right|center_vertical">-->
 
-            <TextView
-                android:id="@+id/tv_setting_title"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:clickable="true"
-                android:gravity="center_vertical"
-                android:onClick="onClick"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
-                android:text="+"
-                android:textColor="#2e94da"
-                android:textSize="32sp" />
-        </LinearLayout>
+<!--            <Button-->
+<!--                android:id="@+id/bu_save"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:clickable="true"-->
+<!--                android:gravity="center_vertical"-->
+<!--                android:onClick="onClick"-->
+<!--                android:paddingLeft="10dp"-->
+<!--                android:paddingRight="10dp"-->
+<!--                android:text="+"-->
+<!--                android:textColor="#2e94da"-->
+<!--                android:textSize="32sp" />-->
+<!--        </LinearLayout>-->
 
 
         <!-- <ImageView
@@ -308,55 +308,61 @@
                         <Button
                             android:id="@+id/lesson17"
                             android:layout_width="match_parent"
-                            android:layout_height="100dp"
+                            android:layout_height="97dp"
                             android:layout_marginTop="2dp"
                             android:background="@drawable/kb0"
+                            android:tag="17"
                             android:textColor="#fff"
                             android:textSize="12sp" />
 
                         <Button
                             android:id="@+id/lesson27"
                             android:layout_width="match_parent"
-                            android:layout_height="100dp"
+                            android:layout_height="97dp"
                             android:layout_marginTop="2dp"
                             android:background="@drawable/kb0"
+                            android:tag="27"
                             android:textColor="#fff"
                             android:textSize="12sp" />
 
                         <Button
                             android:id="@+id/lesson37"
                             android:layout_width="match_parent"
-                            android:layout_height="100dp"
+                            android:layout_height="97dp"
                             android:layout_marginTop="2dp"
                             android:background="@drawable/kb0"
+                            android:tag="37"
                             android:textColor="#fff"
                             android:textSize="12sp" />
 
                         <Button
                             android:id="@+id/lesson47"
                             android:layout_width="match_parent"
-                            android:layout_height="100dp"
+                            android:layout_height="97dp"
                             android:layout_marginTop="2dp"
                             android:background="@drawable/kb0"
+                            android:tag="47"
                             android:textColor="#fff"
                             android:textSize="12sp" />
 
                         <Button
                             android:id="@+id/lesson57"
                             android:layout_width="match_parent"
-                            android:layout_height="100dp"
+                            android:layout_height="97dp"
                             android:layout_marginTop="2dp"
                             android:background="@drawable/kb0"
+                            android:tag="57"
                             android:textColor="#fff"
                             android:textSize="12sp" />
 
                         <Button
                             android:id="@+id/lesson67"
                             android:layout_width="match_parent"
-                            android:layout_height="100dp"
+                            android:layout_height="97dp"
                             android:layout_marginBottom="2dp"
                             android:layout_marginTop="2dp"
                             android:background="@drawable/kb0"
+                            android:tag="67"
                             android:textColor="#fff"
                             android:textSize="12sp" />
                     </LinearLayout>
@@ -371,55 +377,61 @@
                         <Button
                             android:id="@+id/lesson11"
                             android:layout_width="match_parent"
-                            android:layout_height="100dp"
+                            android:layout_height="97dp"
                             android:layout_marginTop="2dp"
                             android:background="@drawable/kb0"
+                            android:tag="11"
                             android:textColor="#fff"
                             android:textSize="12sp" />
 
                         <Button
                             android:id="@+id/lesson21"
                             android:layout_width="match_parent"
-                            android:layout_height="100dp"
+                            android:layout_height="97dp"
                             android:layout_marginTop="2dp"
                             android:background="@drawable/kb0"
                             android:textColor="#fff"
+                            android:tag="21"
                             android:textSize="12sp" />
 
                         <Button
                             android:id="@+id/lesson31"
                             android:layout_width="match_parent"
-                            android:layout_height="100dp"
+                            android:layout_height="97dp"
                             android:layout_marginTop="2dp"
                             android:background="@drawable/kb0"
+                            android:tag="31"
                             android:textColor="#fff"
                             android:textSize="12sp" />
 
                         <Button
                             android:id="@+id/lesson41"
                             android:layout_width="match_parent"
-                            android:layout_height="100dp"
+                            android:layout_height="97dp"
                             android:layout_marginTop="2dp"
                             android:background="@drawable/kb0"
+                            android:tag="41"
                             android:textColor="#fff"
                             android:textSize="12sp" />
 
                         <Button
                             android:id="@+id/lesson51"
                             android:layout_width="match_parent"
-                            android:layout_height="100dp"
+                            android:layout_height="97dp"
                             android:layout_marginTop="2dp"
                             android:background="@drawable/kb0"
+                            android:tag="51"
                             android:textColor="#fff"
                             android:textSize="12sp" />
 
                         <Button
                             android:id="@+id/lesson61"
                             android:layout_width="match_parent"
-                            android:layout_height="100dp"
+                            android:layout_height="97dp"
                             android:layout_marginBottom="2dp"
                             android:layout_marginTop="2dp"
                             android:background="@drawable/kb0"
+                            android:tag="61"
                             android:textColor="#fff"
                             android:textSize="12sp" />
                     </LinearLayout>
@@ -434,55 +446,61 @@
                         <Button
                             android:id="@+id/lesson12"
                             android:layout_width="match_parent"
-                            android:layout_height="100dp"
+                            android:layout_height="97dp"
                             android:layout_marginTop="2dp"
                             android:background="@drawable/kb0"
+                            android:tag="12"
                             android:textColor="#fff"
                             android:textSize="12sp" />
 
                         <Button
                             android:id="@+id/lesson22"
                             android:layout_width="match_parent"
-                            android:layout_height="100dp"
+                            android:layout_height="97dp"
                             android:layout_marginTop="2dp"
                             android:background="@drawable/kb0"
+                            android:tag="22"
                             android:textColor="#fff"
                             android:textSize="12sp" />
 
                         <Button
                             android:id="@+id/lesson32"
                             android:layout_width="match_parent"
-                            android:layout_height="100dp"
+                            android:layout_height="97dp"
                             android:layout_marginTop="2dp"
                             android:background="@drawable/kb0"
+                            android:tag="32"
                             android:textColor="#fff"
                             android:textSize="12sp" />
 
                         <Button
                             android:id="@+id/lesson42"
                             android:layout_width="match_parent"
-                            android:layout_height="100dp"
+                            android:layout_height="97dp"
                             android:layout_marginTop="2dp"
                             android:background="@drawable/kb0"
+                            android:tag="42"
                             android:textColor="#fff"
                             android:textSize="12sp" />
 
                         <Button
                             android:id="@+id/lesson52"
                             android:layout_width="match_parent"
-                            android:layout_height="100dp"
+                            android:layout_height="97dp"
                             android:layout_marginTop="2dp"
                             android:background="@drawable/kb0"
+                            android:tag="52"
                             android:textColor="#fff"
                             android:textSize="12sp" />
 
                         <Button
                             android:id="@+id/lesson62"
                             android:layout_width="match_parent"
-                            android:layout_height="100dp"
+                            android:layout_height="97dp"
                             android:layout_marginBottom="2dp"
                             android:layout_marginTop="2dp"
                             android:background="@drawable/kb0"
+                            android:tag="62"
                             android:textColor="#fff"
                             android:textSize="12sp" />
                     </LinearLayout>
@@ -497,56 +515,62 @@
                         <Button
                             android:id="@+id/lesson13"
                             android:layout_width="match_parent"
-                            android:layout_height="100dp"
+                            android:layout_height="97dp"
                             android:layout_marginTop="2dp"
                             android:background="@drawable/kb0"
+                            android:tag="13"
                             android:textColor="#fff"
                             android:textSize="12sp" />
 
                         <Button
                             android:id="@+id/lesson23"
                             android:layout_width="match_parent"
-                            android:layout_height="100dp"
+                            android:layout_height="97dp"
                             android:layout_marginTop="2dp"
                             android:background="@drawable/kb0"
+                            android:tag="23"
                             android:textColor="#fff"
                             android:textSize="12sp" />
 
                         <Button
                             android:id="@+id/lesson33"
                             android:layout_width="match_parent"
-                            android:layout_height="100dp"
+                            android:layout_height="97dp"
                             android:layout_marginTop="2dp"
                             android:background="@drawable/kb0"
                             android:textColor="#fff"
+                            android:tag="33"
                             android:textSize="12sp" />
 
                         <Button
                             android:id="@+id/lesson43"
                             android:layout_width="match_parent"
-                            android:layout_height="100dp"
+                            android:layout_height="97dp"
                             android:layout_marginTop="2dp"
                             android:background="@drawable/kb0"
                             android:textColor="#fff"
+                            android:tag="43"
                             android:textSize="12sp" />
 
                         <Button
                             android:id="@+id/lesson53"
                             android:layout_width="match_parent"
-                            android:layout_height="100dp"
+                            android:layout_height="97dp"
                             android:layout_marginTop="2dp"
                             android:background="@drawable/kb0"
+                            android:tag="53"
                             android:textColor="#fff"
                             android:textSize="12sp" />
 
                         <Button
                             android:id="@+id/lesson63"
                             android:layout_width="match_parent"
-                            android:layout_height="100dp"
+                            android:layout_height="97dp"
                             android:layout_marginBottom="2dp"
                             android:layout_marginTop="2dp"
                             android:background="@drawable/kb0"
                             android:textColor="#fff"
+                            android:tag="63"
                             android:textSize="12sp" />
                     </LinearLayout>
 
@@ -560,56 +584,62 @@
                         <Button
                             android:id="@+id/lesson14"
                             android:layout_width="match_parent"
-                            android:layout_height="100dp"
+                            android:layout_height="97dp"
                             android:layout_marginTop="2dp"
                             android:background="@drawable/kb0"
                             android:textColor="#fff"
+                            android:tag="14"
                             android:textSize="12sp" />
 
                         <Button
                             android:id="@+id/lesson24"
                             android:layout_width="match_parent"
-                            android:layout_height="100dp"
+                            android:layout_height="97dp"
                             android:layout_marginTop="2dp"
                             android:background="@drawable/kb0"
                             android:textColor="#fff"
+                            android:tag="24"
                             android:textSize="12sp" />
 
                         <Button
                             android:id="@+id/lesson34"
                             android:layout_width="match_parent"
-                            android:layout_height="100dp"
+                            android:layout_height="97dp"
                             android:layout_marginTop="2dp"
                             android:background="@drawable/kb0"
                             android:textColor="#fff"
+                            android:tag="34"
                             android:textSize="12sp" />
 
                         <Button
                             android:id="@+id/lesson44"
                             android:layout_width="match_parent"
-                            android:layout_height="100dp"
+                            android:layout_height="97dp"
                             android:layout_marginTop="2dp"
                             android:background="@drawable/kb0"
                             android:textColor="#fff"
+                            android:tag="44"
                             android:textSize="12sp" />
 
                         <Button
                             android:id="@+id/lesson54"
                             android:layout_width="match_parent"
-                            android:layout_height="100dp"
+                            android:layout_height="97dp"
                             android:layout_marginTop="2dp"
                             android:background="@drawable/kb0"
                             android:textColor="#fff"
+                            android:tag="54"
                             android:textSize="12sp" />
 
                         <Button
                             android:id="@+id/lesson64"
                             android:layout_width="match_parent"
-                            android:layout_height="100dp"
+                            android:layout_height="97dp"
                             android:layout_marginBottom="2dp"
                             android:layout_marginTop="2dp"
                             android:background="@drawable/kb0"
                             android:textColor="#fff"
+                            android:tag="64"
                             android:textSize="12sp" />
                     </LinearLayout>
 
@@ -623,56 +653,62 @@
                         <Button
                             android:id="@+id/lesson15"
                             android:layout_width="match_parent"
-                            android:layout_height="100dp"
+                            android:layout_height="97dp"
                             android:layout_marginTop="2dp"
                             android:background="@drawable/kb0"
                             android:textColor="#fff"
+                            android:tag="15"
                             android:textSize="12sp" />
 
                         <Button
                             android:id="@+id/lesson25"
                             android:layout_width="match_parent"
-                            android:layout_height="100dp"
+                            android:layout_height="97dp"
                             android:layout_marginTop="2dp"
                             android:background="@drawable/kb0"
                             android:textColor="#fff"
+                            android:tag="25"
                             android:textSize="12sp" />
 
                         <Button
                             android:id="@+id/lesson35"
                             android:layout_width="match_parent"
-                            android:layout_height="100dp"
+                            android:layout_height="97dp"
                             android:layout_marginTop="2dp"
                             android:background="@drawable/kb0"
                             android:textColor="#fff"
+                            android:tag="35"
                             android:textSize="12sp" />
 
                         <Button
                             android:id="@+id/lesson45"
                             android:layout_width="match_parent"
-                            android:layout_height="100dp"
+                            android:layout_height="97dp"
                             android:layout_marginTop="2dp"
                             android:background="@drawable/kb0"
                             android:textColor="#fff"
+                            android:tag="45"
                             android:textSize="12sp" />
 
                         <Button
                             android:id="@+id/lesson55"
                             android:layout_width="match_parent"
-                            android:layout_height="100dp"
+                            android:layout_height="97dp"
                             android:layout_marginTop="2dp"
                             android:background="@drawable/kb0"
                             android:textColor="#fff"
+                            android:tag="55"
                             android:textSize="12sp" />
 
                         <Button
                             android:id="@+id/lesson65"
                             android:layout_width="match_parent"
-                            android:layout_height="100dp"
+                            android:layout_height="97dp"
                             android:layout_marginBottom="2dp"
                             android:layout_marginTop="2dp"
                             android:background="@drawable/kb0"
                             android:textColor="#fff"
+                            android:tag="65"
                             android:textSize="12sp" />
                     </LinearLayout>
 
@@ -686,56 +722,62 @@
                         <Button
                             android:id="@+id/lesson16"
                             android:layout_width="match_parent"
-                            android:layout_height="100dp"
+                            android:layout_height="97dp"
                             android:layout_marginTop="2dp"
                             android:background="@drawable/kb0"
                             android:textColor="#fff"
+                            android:tag="16"
                             android:textSize="12sp" />
 
                         <Button
                             android:id="@+id/lesson26"
                             android:layout_width="match_parent"
-                            android:layout_height="100dp"
+                            android:layout_height="97dp"
                             android:layout_marginTop="2dp"
                             android:background="@drawable/kb0"
                             android:textColor="#fff"
+                            android:tag="26"
                             android:textSize="12sp" />
 
                         <Button
                             android:id="@+id/lesson36"
                             android:layout_width="match_parent"
-                            android:layout_height="100dp"
+                            android:layout_height="97dp"
                             android:layout_marginTop="2dp"
                             android:background="@drawable/kb0"
                             android:textColor="#fff"
+                            android:tag="36"
                             android:textSize="12sp" />
 
                         <Button
                             android:id="@+id/lesson46"
                             android:layout_width="match_parent"
-                            android:layout_height="100dp"
+                            android:layout_height="97dp"
                             android:layout_marginTop="2dp"
                             android:background="@drawable/kb0"
                             android:textColor="#fff"
+                            android:tag="46"
                             android:textSize="12sp" />
 
                         <Button
                             android:id="@+id/lesson56"
                             android:layout_width="match_parent"
-                            android:layout_height="100dp"
+                            android:layout_height="97dp"
                             android:layout_marginTop="2dp"
                             android:background="@drawable/kb0"
                             android:textColor="#fff"
+                            android:tag="56"
                             android:textSize="12sp" />
 
                         <Button
                             android:id="@+id/lesson66"
                             android:layout_width="match_parent"
-                            android:layout_height="100dp"
+                            android:layout_height="97dp"
                             android:layout_marginBottom="2dp"
                             android:layout_marginTop="2dp"
                             android:background="@drawable/kb0"
                             android:textColor="#fff"
+                            android:tag="66"
                             android:textSize="12sp" />
                     </LinearLayout>
 

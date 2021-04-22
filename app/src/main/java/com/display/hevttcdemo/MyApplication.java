@@ -68,7 +68,7 @@ public class MyApplication extends Application {
         //设置appkey
         .setApplicationId(Constant.BMOB_APP_KEY)
         //请求超时时间（单位为秒）：默认15s
-        .setConnectTimeout(60)
+        .setConnectTimeout(300)
         //文件分片上传时每片的大小（单位字节），默认512*1024
         .setUploadBlockSize(1024*1024)
         //文件的过期时间(单位为秒)：默认1800s

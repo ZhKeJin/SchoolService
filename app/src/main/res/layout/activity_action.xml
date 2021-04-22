@@ -1,0 +1,162 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+<!--    <TextView-->
+<!--        android:id="@+id/title"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="54dp"-->
+<!--        android:background="@color/blue"-->
+<!--        android:gravity="center"-->
+<!--        android:text="录入信息"-->
+<!--        android:textColor="#FF5722"-->
+<!--        android:textSize="30sp" />-->
+
+    <LinearLayout
+        android:id="@+id/ll_user_info_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fefefe"
+        android:orientation="horizontal"
+        android:padding="14dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="10"
+            android:gravity="left"
+            android:lines="1"
+            android:maxLength="20"
+            android:text="课表信息："
+            android:textColor="?android:attr/panelColorForeground"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/tv_class_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="10"
+            android:gravity="right"
+            android:hint="请输入信息！"
+            android:lines="1"
+            android:maxLength="20"
+            android:text=""
+            android:textColor="#aaaeb0"
+            android:textSize="18sp" />
+
+        <!--        <ImageView-->
+        <!--            android:layout_width="30dp"-->
+        <!--            android:layout_height="30dp"-->
+        <!--            android:background="@drawable/image_bg" />-->
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_user_info_sex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:background="#fefefe"
+        android:orientation="horizontal"
+        android:padding="14dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="10"
+            android:gravity="left"
+            android:lines="1"
+            android:maxLength="20"
+            android:text="老师："
+            android:textColor="?android:attr/panelColorForeground"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/tv_teacher"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="10"
+            android:gravity="right"
+            android:lines="1"
+            android:maxLength="20"
+            android:text=""
+            android:textColor="#aaaeb0"
+            android:hint="请输入信息！"
+            android:textSize="18sp" />
+
+        <!--        <ImageView-->
+        <!--            android:layout_width="30dp"-->
+        <!--            android:layout_height="30dp"-->
+        <!--            android:background="@drawable/image_bg" />-->
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_user_info_stuno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:background="#fefefe"
+        android:orientation="horizontal"
+        android:padding="14dp"
+        android:="1px">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="10"
+            android:gravity="left"
+            android:lines="1"
+            android:maxLength="20"
+            android:text="地点："
+            android:autoLink="all"
+            android:textColor="?android:attr/panelColorForeground"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/tv_address"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="10"
+            android:gravity="right"
+            android:lines="1"
+            android:maxLength="20"
+            android:text=""
+            android:textColor="#aaaeb0"
+            android:hint="请输入信息！"
+            android:textSize="18sp" />
+
+        <!--        <ImageView-->
+        <!--            android:layout_width="30dp"-->
+        <!--            android:layout_height="30dp"-->
+        <!--            android:background="@drawable/image_bg" />-->
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#99CD7D"
+        android:gravity="center"
+        android:text="保存"
+        android:textColor="#F8F6F5"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/cancel"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginTop="10dp"
+        android:background="#A8D377"
+        android:gravity="center"
+        android:text="取消"
+        android:textColor="#F3ECEA"
+        android:textSize="16sp" />
+
+</LinearLayout>

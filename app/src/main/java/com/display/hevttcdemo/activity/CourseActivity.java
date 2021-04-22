@@ -1,5 +1,6 @@
 package com.display.hevttcdemo.activity;
 
+import android.annotation.SuppressLint;
 import android.app.AlertDialog;
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -7,6 +8,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.graphics.Color;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -15,11 +17,18 @@ import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.Spinner;
 
+import androidx.annotation.RequiresApi;
+
+import com.display.hevttcdemo.bean.MyUser;
+import com.display.hevttcdemo.bean.NewsBean;
+import com.display.hevttcdemo.bean.Schedule;
+import com.display.hevttcdemo.utils.LogUtils;
 import com.google.gson.Gson;
 
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
+import java.util.List;
 
 import com.display.hevttcdemo.R;
 import com.display.hevttcdemo.adapter.WeekDayAdapter;
@@ -30,11 +39,17 @@ import com.display.hevttcdemo.utils.DateUtils;
 import com.display.hevttcdemo.utils.SPUtils;
 import com.display.hevttcdemo.widget.CourseWidgetProvider;
 
+import butterknife.OnClick;
+import cn.bmob.v3.BmobQuery;
+import cn.bmob.v3.BmobUser;
+import cn.bmob.v3.exception.BmobException;
+import cn.bmob.v3.listener.FindListener;
+
 /**
  * 课表主界面，显示课表内容
  * Created by FatCat on 2016/10/3.
  */
-public class CourseActivity extends BaseActivity implements AdapterView.OnItemSelectedListener {
+public class CourseActivity extends BaseActivity {
 
     /**
      * 课程表
@@ -76,18 +91,17 @@ public class CourseActivity extends BaseActivity implements AdapterView.OnItemSe
      */
     private HashMap<String, Integer> mBgColorMap;
 
-    private CourseBroadcast mCourseBroadcast;
 
     /**
      * 课程页面的button引用，6行7列
      */
     private int[][] lessons = {
-            {R.id.lesson17, R.id.lesson11, R.id.lesson12, R.id.lesson13, R.id.lesson14, R.id.lesson15, R.id.lesson16},
-            {R.id.lesson27, R.id.lesson21, R.id.lesson22, R.id.lesson23, R.id.lesson24, R.id.lesson25, R.id.lesson26},
-            {R.id.lesson37, R.id.lesson31, R.id.lesson32, R.id.lesson33, R.id.lesson34, R.id.lesson35, R.id.lesson36},
-            {R.id.lesson47, R.id.lesson41, R.id.lesson42, R.id.lesson43, R.id.lesson44, R.id.lesson45, R.id.lesson46},
-            {R.id.lesson57, R.id.lesson51, R.id.lesson52, R.id.lesson53, R.id.lesson54, R.id.lesson55, R.id.lesson56},
-            {R.id.lesson67, R.id.lesson61, R.id.lesson62, R.id.lesson63, R.id.lesson64, R.id.lesson65, R.id.lesson66}
+            {R.id.lesson11, R.id.lesson12, R.id.lesson13, R.id.lesson14, R.id.lesson15, R.id.lesson16, R.id.lesson17},
+            {R.id.lesson21, R.id.lesson22, R.id.lesson23, R.id.lesson24, R.id.lesson25, R.id.lesson26, R.id.lesson27},
+            {R.id.lesson31, R.id.lesson32, R.id.lesson33, R.id.lesson34, R.id.lesson35, R.id.lesson36, R.id.lesson37},
+            {R.id.lesson41, R.id.lesson42, R.id.lesson43, R.id.lesson44, R.id.lesson45, R.id.lesson46, R.id.lesson47},
+            {R.id.lesson51, R.id.lesson52, R.id.lesson53, R.id.lesson54, R.id.lesson55, R.id.lesson56, R.id.lesson57},
+            {R.id.lesson61, R.id.lesson62, R.id.lesson63, R.id.lesson64, R.id.lesson65, R.id.lesson66, R.id.lesson67}
     };
 
     /**
@@ -101,68 +115,82 @@ public class CourseActivity extends BaseActivity implements AdapterView.OnItemSe
             R.drawable.kb21, R.drawable.kb22, R.drawable.kb23, R.drawable.kb24, R.drawable.kb25
     };
 
-    /**
-     * 更新界面显示
-     */
-    private Handler mHandler = new Handler() {
-        @Override
-        public void handleMessage(Message msg) {
-            super.handleMessage(msg);
-            switch (msg.what) {
-                case 0x200: {
-                    //选择周数时调整课表
-                    int weekNum = msg.getData().getInt("message");
-                    if (mSelectWeek != weekNum && mCourseTable != null) {
-                        mSelectWeek = weekNum;
-                        rankCourse(weekNum);
-                    }
-                    break;
-                }
-                case 0x201: {
-                    //更改当前周
-                    updateCurrWeek();
-                    if (mCurrWeek <= 25) {
-                        mWeekDaySpinner.setSelection(mCurrWeek - 1, true);
-                    }
-                    mAdapter.notifyDataSetChanged();
-                    rankCourse(mCurrWeek);
 
-                    //更新桌面小部件
-                    updateWidget();
-                    break;
-                }
-                case 0x202: {
-                    //添加或者更换课表
-                    if (updateCourse()) {
-                        mAdapter.notifyDataSetChanged();
-                        rankCourse(mSelectWeek);
-                    }
-                    //更新桌面小部件
-                    updateWidget();
-                    break;
-                }
-            }
-        }
-    };
+    private ArrayList<Schedule> newsBeanList;
+
 
     @Override
     protected void initView() {
-
-        mWeekDaySpinner = (Spinner) findViewById(R.id.week_day_spinner);
-
-        //初始化并注册广播
-        mCourseBroadcast = new CourseBroadcast();
-        IntentFilter filter = new IntentFilter();
-        filter.addAction(BroadcastAction.UPDATE_CURR_WEEK_NUM);
-        filter.addAction(BroadcastAction.UPDTE_COURSE);
-        registerReceiver(mCourseBroadcast, filter);
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        unregisterReceiver(mCourseBroadcast);
+//        unregisterReceiver(mCourseBroadcast);
     }
+
+    @Override
+    protected int getLayoutId() {
+        return R.layout.activity_course;
+    }
+
+    @Override
+    protected void initData() {
+        //填充数据
+        newsBeanList = new ArrayList<>();
+        MyUser user = BmobUser.getCurrentUser(MyUser.class);
+        BmobQuery<Schedule> schedule = new BmobQuery<>();
+        schedule.order("day, lesson");
+        schedule.addWhereEqualTo("phone", user.getMobilePhoneNumber());
+
+        schedule.findObjects(new FindListener<Schedule>() {
+            @Override
+            public void done(List<Schedule> list, BmobException e) {
+                if (e == null) {
+                    LogUtils.e("schedule        " + list.size());
+
+                    for (Schedule schedule1 : list) {
+                        LogUtils.e("schedule" + schedule1.toString());
+                        String newText = schedule1.getClassName() + "\n" + schedule1.getAdderss();
+                        int i = Integer.parseInt(schedule1.getDay());
+                        int j = Integer.parseInt(schedule1.getLesson());
+
+
+
+                        Button btn = (Button) findViewById(lessons[j-1][i-1]);
+                        btn.setText(newText);
+                        btn.setTextColor(Color.WHITE);
+                        btn.setBackgroundResource(bg[6]);
+
+                    }
+                    LogUtils.e("查询成功：共" + list.size() + "条数据。");
+                } else {
+                    LogUtils.e("失败：" + e.getMessage() + "," + e.getErrorCode());
+                }
+            }
+        });
+    }
+
+    //   事件处理
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
+    @OnClick({R.id.lesson17, R.id.lesson11, R.id.lesson12, R.id.lesson13, R.id.lesson14, R.id.lesson15, R.id.lesson16,
+            R.id.lesson27, R.id.lesson21, R.id.lesson22, R.id.lesson23, R.id.lesson24, R.id.lesson25, R.id.lesson26,
+            R.id.lesson37, R.id.lesson31, R.id.lesson32, R.id.lesson33, R.id.lesson34, R.id.lesson35, R.id.lesson36,
+            R.id.lesson47, R.id.lesson41, R.id.lesson42, R.id.lesson43, R.id.lesson44, R.id.lesson45, R.id.lesson46,
+            R.id.lesson57, R.id.lesson51, R.id.lesson52, R.id.lesson53, R.id.lesson54, R.id.lesson55, R.id.lesson56,
+            R.id.lesson67, R.id.lesson61, R.id.lesson62, R.id.lesson63, R.id.lesson64, R.id.lesson65, R.id.lesson66})
+    public void onClick(Button view) {
+        Integer i = Integer.parseInt(view.getTag().toString());
+        LogUtils.e("oncli"+view.getTag().toString());
+
+        Intent intent = new Intent();
+        Bundle bundle = new Bundle();
+        bundle.putSerializable("lesson", i);
+        intent.putExtras(bundle);
+        ActionActivity ac = new ActionActivity();
+        ac.showSheet(CourseActivity.this, i);
+    }
+
 
     /**
      * 排列课程到课表界面
@@ -235,192 +263,10 @@ public class CourseActivity extends BaseActivity implements AdapterView.OnItemSe
 
     }
 
-    /**
-     * 更新周数
-     */
-    private void updateCurrWeek() {
-        long currTime = new Date().getTime();
-        long beginTime = SPUtils.getBeginTime(this, currTime);
-        mCurrWeek = DateUtils.countCurrWeek(beginTime, currTime);
-        if (mCurrWeek > 25) {
-            mSelectWeek = 1;
-        } else {
-            mSelectWeek = mCurrWeek;
-        }
-    }
-
-    /**
-     * 更新课表
-     */
-    private boolean updateCourse() {
-        updateCurrWeek();
-        //取出保存的课表
-        String xnd = SPUtils.getCurrXnd(CourseActivity.this, "");
-        String xqd = SPUtils.getCurrXqd(CourseActivity.this, "");
-        String courseString = SPUtils.getCourseInfo(CourseActivity.this, xnd + xqd, "");
-        if (courseString == null || courseString.equals("")) {
-            return false;
-        }
-        updateCurrWeek();//更新当前周
-        //读取已经保存的课表
-        Gson gson = new Gson();
-        mCourseTable = gson.fromJson(courseString, CourseTable.class);//获取课表对象
-        mCourseMap.clear();
-        mBgColorMap.clear();
-        int k = 0;
-
-        try {
-            for (Course c : mCourseTable.getCourses()) {
-                String key = c.getName() + "@" + c.getClassRoom() + "*" + c.getNumber() + (c.getDay() % 7);
-                mCourseMap.put(key, c);
-                mBgColorMap.put(c.getName(), bg[k++]);
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        return true;
-    }
-
-
-    @Override
-    protected int getLayoutId() {
-        return R.layout.activity_course;
-    }
-
-    @Override
-    protected void initData() {
-
-        mCourseMap = new HashMap<>();
-        mBgColorMap = new HashMap<>();
-        mCurrWeek = 0;
-
-        if (!updateCourse()) {
-            AlertDialog.Builder ab = new AlertDialog.Builder(CourseActivity.this)
-                    .setTitle("提示：")
-                    .setMessage("你还未添加课程表，现在添加？")
-                    .setNegativeButton("取消", null)
-                    .setPositiveButton("确定", new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialog, int which) {
-                            Intent intent = new Intent(CourseActivity.this, CourseLoginActivity.class);
-                            intent.putExtra("query", "获取课表...");
-                            startActivity(intent);
-                        }
-                    });
-            ab.create().show();
-        } else {
-            rankCourse(mSelectWeek);
-        }
-
-        mWeekArr = new ArrayList<>();
-        String s = "第1周";
-        for (int i = 25; i > 0; i--) {
-            String w = s.replaceAll("[\\d]+", String.valueOf(i));
-            mWeekArr.add(0, w);
-        }
-
-        mAdapter = new WeekDayAdapter(this, R.layout.week_day_item_layout, mWeekArr);
-        mAdapter.setDropDownViewResource(R.layout.week_day_drop_item_layout);
-        mWeekDaySpinner.setAdapter(mAdapter);
-        if (mCurrWeek <= 25) {
-            mWeekDaySpinner.setSelection(mCurrWeek - 1, true);
-        }
-        mWeekDaySpinner.setOnItemSelectedListener(this);
-
-        //更新桌面小部件
-        updateWidget();
-    }
-
-    //事件处理
-    public void onClick(View view) {
-        switch (view.getId()) {
-            case R.id.tv_setting_title: {
-                Intent intent = new Intent(this, SettingActivity.class);
-                startActivity(intent);
-                break;
-            }
-        }
-    }
-
-    /**
-     * 更新桌面小部件
-     */
-    private void updateWidget() {
-        Intent intent = new Intent();
-        intent.setAction(CourseWidgetProvider.UPDATE_UI);
-        sendBroadcast(intent);
-    }
-
-    @Override
-    public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-        Message msg = new Message();
-        msg.what = 0x200;
-        Bundle bl = new Bundle();
-        bl.putInt("message", position + 1);
-        msg.setData(bl);
-        mHandler.sendMessage(msg);
-    }
-
-    @Override
-    public void onNothingSelected(AdapterView<?> parent) {
-
-    }
-
-    /**
-     * 获取当前周
-     *
-     * @return 当前周数
-     */
-    public int getCurrWeek() {
-        return mCurrWeek;
-    }
-
-    /**
-     * 获取当前学年
-     *
-     * @return 学年
-     */
-    public String getCurrXnd() {
-        if (mCourseTable == null) {
-            return "";
-        }
-        return mCourseTable.getCurrXnd();
-    }
-
-    /**
-     * 获取当前学期
-     *
-     * @return 学期
-     */
-    public String getCurrXqd() {
-        if (mCourseTable == null) {
-            return "";
-        }
-        return mCourseTable.getCurrXqd();
-    }
-
-    /**
-     * 广播监听类，负责接收相关数据变更广播以便更新界面
-     */
-    class CourseBroadcast extends BroadcastReceiver {
-        @Override
-        public void onReceive(Context context, Intent intent) {
-            Message msg = new Message();
-            switch (intent.getAction()) {
-                case BroadcastAction.UPDATE_CURR_WEEK_NUM: {
-                    msg.what = 0x201;
-                    break;
-                }
-                case BroadcastAction.UPDTE_COURSE: {
-                    msg.what = 0x202;
-                    break;
-                }
-            }
-            mHandler.sendMessage(msg);
-        }
-    }
 
 }
+
+
 
 
 

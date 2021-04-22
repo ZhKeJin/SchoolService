@@ -2,23 +2,15 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.display.hevttcdemo">
-
-    <!--允许联网 -->
-    <uses-permission android:name="android.permission.INTERNET" />
-    <!--获取GSM（2g）、WCDMA（联通3g）等网络状态的信息  -->
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <!--获取wifi网络状态的信息 -->
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-    <!--保持CPU 运转，屏幕和键盘灯有可能是关闭的,用于文件上传和下载 -->
-    <uses-permission android:name="android.permission.WAKE_LOCK" />
-    <!--获取sd卡写的权限，用于文件上传和下载-->
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <!--允许读取手机状态 用于创建BmobInstallation-->
-    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
-    <!-- <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> -->
+    <!-- 允许联网 -->
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- 获取GSM（2g）、WCDMA（联通3g）等网络状态的信息 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- 获取wifi网络状态的信息 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- 保持CPU 运转，屏幕和键盘灯有可能是关闭的,用于文件上传和下载 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- 获取sd卡写的权限，用于文件上传和下载 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- 允许读取手机状态 用于创建BmobInstallation -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" /> <!-- <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> -->
     <!-- SD卡中用到的 -->
-    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
-    <!-- 结束package -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" /> <!-- 结束package -->
     <uses-permission android:name="android.permission.RESTART_PACKAGES" />
     <uses-permission android:name="android.permission.READ_LOGS" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
@@ -26,7 +18,6 @@
     <uses-permission android:name="android.permission.READ_SMS" />
     <uses-permission android:name="android.permission.GET_TASKS" />
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
-
 
     <application
         android:name=".MyApplication"
@@ -37,24 +28,24 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HevttcDemo"
         android:usesCleartextTraffic="true">
+        <activity
+            android:name=".activity.ActionActivity"
+            android:label="@string/title_activity_action"
+            android:theme="@style/Theme.HevttcDemo.NoActionBar"></activity>
 
         <uses-library
             android:name="org.apache.http.legacy"
-            android:required="false" />
-
-        <!--        <activity android:name=".activity.SplashActivity">-->
-        <!--            <intent-filter>-->
-        <!--                <action android:name="android.intent.action.MAIN" />-->
-
-        <!--                <category android:name="android.intent.category.LAUNCHER" />-->
-        <!--            </intent-filter>-->
-        <!--        </activity>-->
-
-
+            android:required="false" /> <!-- <activity android:name=".activity.SplashActivity"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.MAIN" /> -->
+        <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+        <!-- </intent-filter> -->
+        <!-- </activity> -->
         <activity android:name=".activity.AppCompatPreferenceActivity" />
         <activity android:name=".activity.BaseActivity" />
         <activity android:name=".activity.ReviewTestActivity" />
-        <activity android:name=".activity.HomeActivity"
+        <activity
+            android:name=".activity.HomeActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity android:name=".activity.WebActivity" />
         <activity
@@ -72,13 +63,15 @@
         <activity
             android:name="com.lzy.imagepicker.ui.ImagePreviewDelActivity"
             android:theme="@style/ImagePickerThemeFullScreen" />
-        <activity android:name=".activity.BuyActivity"
+        <activity
+            android:name=".activity.BuyActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity android:name=".activity.PicDetailActivity" />
         <activity android:name=".activity.AnswerActivity" />
         <activity android:name=".activity.GradeActivity" />
         <activity android:name=".activity.AboutActivity" />
-        <activity android:name=".activity.LoseActivity"
+        <activity
+            android:name=".activity.LoseActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
             android:name=".activity.LoginActivity"
@@ -116,9 +109,8 @@
         <activity android:name=".activity.CourseActivity" />
         <activity android:name=".activity.PhotoSchoolActivity" />
         <activity android:name=".activity.WeatherActivity" />
-
-
-        <activity android:name=".activity.CourseLoginActivity"
+        <activity
+            android:name=".activity.CourseLoginActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity android:name=".activity.CourseInfoActivity" />
         <activity android:name=".activity.ScoreAtivity" />
@@ -131,9 +123,8 @@
             android:name="cn.bmob.v3.util.BmobContentProvider"
             android:authorities="com.display.hevttcdemo.BmobContentProvider" />
 
-
         <receiver
-            android:name="com.display.hevttcdemo.widget.CourseWidgetProvider"
+            android:name=".widget.CourseWidgetProvider"
             android:label="西邮有约">
             <meta-data
                 android:name="android.appwidget.provider"
@@ -146,14 +137,12 @@
         </receiver>
 
         <service
-            android:name="com.display.hevttcdemo.widget.CourseRemoteViewService"
+            android:name=".widget.CourseRemoteViewService"
             android:permission="android.permission.BIND_REMOTEVIEWS" />
         <service
-            android:name="com.display.hevttcdemo.jw.service.DataService"
+            android:name=".jw.service.DataService"
             android:enabled="true"
             android:exported="true" />
-
-
     </application>
 
 </manifest>
