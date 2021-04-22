@@ -46,8 +46,8 @@ public class TabHomeFragment extends BaseFragment {
     private GeneralAdapter moduleAdapter;
     private ArrayList<ModuleItem> moduleList = new ArrayList<>();
     //首页轮播图   图片资源
-    List<Integer> bannerImages = Arrays.asList(R.mipmap.img_keshi1, R.mipmap.img_keshi2,
-            R.mipmap.img_keshi3, R.mipmap.img_keshi4);
+    List<Integer> bannerImages = Arrays.asList(R.mipmap.img_xiyou1, R.mipmap.img_xiyou2,
+            R.mipmap.img_xiyou3, R.mipmap.img_xiyou4);
 
     @Override
     protected int getLayoutId() {

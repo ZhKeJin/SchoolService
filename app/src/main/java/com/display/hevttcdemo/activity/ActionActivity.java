@@ -124,7 +124,9 @@ public class ActionActivity extends BaseActivity {
                         (TextUtils.isEmpty(lesson.toString()))) {
                     ToastUtil.show(ActionActivity.this, "请将信息填写完整", Toast.LENGTH_SHORT);
                     LoadDialog.dismiss(ActionActivity.this);
+                    dlg.dismiss();
                     finish();
+                    return;
                 }
 
                 LogUtils.e("showSheet .... content");

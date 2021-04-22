@@ -40,10 +40,10 @@ public class TabNewsFragment extends BaseFragment {
         initViewPager();
 
         int[] mImageArray = new int[]{
-                R.mipmap.img_keshi1,
-                R.mipmap.img_keshi4,
-                R.mipmap.img_bg_news3,
-                R.mipmap.img_bg_news4};
+                R.mipmap.img_xiyou1,
+                R.mipmap.img_xiyou4,
+                R.mipmap.img_xiyou1,
+                R.mipmap.img_bg_news1};
         int[] mColorArray = new int[]{
                 android.R.color.holo_blue_light,
                 android.R.color.holo_red_light,

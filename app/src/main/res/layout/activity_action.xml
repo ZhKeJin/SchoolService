@@ -3,16 +3,6 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-<!--    <TextView-->
-<!--        android:id="@+id/title"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="54dp"-->
-<!--        android:background="@color/blue"-->
-<!--        android:gravity="center"-->
-<!--        android:text="录入信息"-->
-<!--        android:textColor="#FF5722"-->
-<!--        android:textSize="30sp" />-->
-
     <LinearLayout
         android:id="@+id/ll_user_info_name"
         android:layout_width="match_parent"
@@ -47,10 +37,6 @@
             android:textColor="#aaaeb0"
             android:textSize="18sp" />
 
-        <!--        <ImageView-->
-        <!--            android:layout_width="30dp"-->
-        <!--            android:layout_height="30dp"-->
-        <!--            android:background="@drawable/image_bg" />-->
     </LinearLayout>
 
     <LinearLayout
@@ -88,10 +74,6 @@
             android:hint="请输入信息！"
             android:textSize="18sp" />
 
-        <!--        <ImageView-->
-        <!--            android:layout_width="30dp"-->
-        <!--            android:layout_height="30dp"-->
-        <!--            android:background="@drawable/image_bg" />-->
     </LinearLayout>
 
     <LinearLayout
@@ -101,8 +83,7 @@
         android:layout_marginTop="2dp"
         android:background="#fefefe"
         android:orientation="horizontal"
-        android:padding="14dp"
-        android:="1px">
+        android:padding="14dp">
 
         <TextView
             android:layout_width="0dp"
@@ -131,10 +112,6 @@
             android:hint="请输入信息！"
             android:textSize="18sp" />
 
-        <!--        <ImageView-->
-        <!--            android:layout_width="30dp"-->
-        <!--            android:layout_height="30dp"-->
-        <!--            android:background="@drawable/image_bg" />-->
     </LinearLayout>
 
 
