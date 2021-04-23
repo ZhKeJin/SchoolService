@@ -179,8 +179,8 @@ public class ActionActivity extends BaseActivity {
 
                 }
                 dlg.dismiss();
-//                startActivity(new Intent(, CourseActivity.class));
                 finish();
+                startActivity(new Intent(ActionActivity.this, CourseActivity.class));
             }
         });
 

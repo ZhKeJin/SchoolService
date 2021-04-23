@@ -9,8 +9,8 @@ public class Config {
     //    是否使用测试账号
     public static final boolean useTestAccount = true;
     //  测试账号以及密码
-    public static final String TestAccount = "13901234567";
-    public static final String TestPassword = "aa";
+    public static final String TestAccount = "15912345678";
+    public static final String TestPassword = "123456";
 
     public static final String MODULE_NAME_BUY = "淘点宝贝";
     public static final String MODULE_NAME_SALE = "换点银子";

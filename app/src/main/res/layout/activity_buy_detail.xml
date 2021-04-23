@@ -47,7 +47,7 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="7dp"
                     android:textSize="14sp"
-                    tools:text="郑卫超" />
+                    tools:text="img_xiyou" />
 
                 <TextView
                     android:id="@+id/tv_detail_buy_time"

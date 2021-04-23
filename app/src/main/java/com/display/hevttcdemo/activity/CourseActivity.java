@@ -155,8 +155,6 @@ public class CourseActivity extends BaseActivity {
                         int i = Integer.parseInt(schedule1.getDay());
                         int j = Integer.parseInt(schedule1.getLesson());
 
-
-
                         Button btn = (Button) findViewById(lessons[j-1][i-1]);
                         btn.setText(newText);
                         btn.setTextColor(Color.WHITE);
