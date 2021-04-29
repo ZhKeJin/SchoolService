@@ -9,8 +9,8 @@ public class Config {
     //    是否使用测试账号
     public static final boolean useTestAccount = true;
     //  测试账号以及密码
-    public static final String TestAccount = "15912345678";
-    public static final String TestPassword = "123456";
+    public static final String TestAccount = "";
+    public static final String TestPassword = "";
 
     public static final String MODULE_NAME_BUY = "淘点宝贝";
     public static final String MODULE_NAME_SALE = "换点银子";
@@ -21,6 +21,6 @@ public class Config {
     // 新闻中心 四个栏目的标题
     public static final String MODULE_NEWS_ONE = "通知公告";
     public static final String MODULE_NEWS_TWO = "新闻速递";
-    public static final String MODULE_NEWS_THREE = "自媒体";
-    public static final String MODULE_NEWS_FOUR = "校园文化";
+    public static final String MODULE_NEWS_THREE = "就业速递";
+    public static final String MODULE_NEWS_FOUR = "宣讲会";
 }

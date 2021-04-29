@@ -43,7 +43,7 @@
         <!-- </activity> -->
         <activity android:name=".activity.AppCompatPreferenceActivity" />
         <activity android:name=".activity.BaseActivity" />
-        <activity android:name=".activity.ReviewTestActivity" />
+<!--        <activity android:name=".activity.ReviewTestActivity" />-->
         <activity
             android:name=".activity.HomeActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
@@ -105,10 +105,9 @@
         <activity android:name=".activity.TeamActivity" />
         <activity android:name=".activity.TeamDetailActivity" />
         <activity android:name=".activity.LoveActivity" />
-        <activity android:name=".activity.CourseActivity0" />
         <activity android:name=".activity.CourseActivity" />
         <activity android:name=".activity.PhotoSchoolActivity" />
-        <activity android:name=".activity.WeatherActivity" />
+<!--        <activity android:name=".activity.WeatherActivity" />-->
 <!--        <activity-->
 <!--            android:name=".activity.CourseLoginActivity"-->
 <!--            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />-->
