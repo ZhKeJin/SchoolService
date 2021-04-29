@@ -34,7 +34,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
         android:text="想要优质的校园生活？一个APP全帮你搞定！
-西邮有约致力于打造便捷的校园生活，服务于广大学生群体，从学生自身的角度出发，尽可能多的考虑学生在校园生活中可能遇到的问题，为此我们目前涵盖了校内新闻查看、校园通讯录查询、失物招领、二手交易、图说校园、校历查询、网址导航、考前复习等功能，打造一款靠谱的校园生活APP。
+西邮校园致力于打造便捷的校园生活，服务于广大学生群体，从学生自身的角度出发，尽可能多的考虑学生在校园生活中可能遇到的问题，为此我们目前涵盖了校内新闻查看、校园通讯录查询、失物招领、二手交易、图说校园、校历查询、网址导航、考前复习等功能，打造一款靠谱的校园生活APP。
 我们不断努力，让校园生活在你手中，让你的大学井然有序！"
         android:visibility="gone" />
 
@@ -53,7 +53,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="20dp"
-        android:text="slogon：西邮有约，与你相约。让校园生活更简单！"
+        android:text="slogon：西邮校园，与你相约。让校园生活更简单！"
         android:textSize="16sp" />
 
     <TextView

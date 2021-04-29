@@ -29,7 +29,7 @@ public class MyWelcomeActivity extends WelcomeActivity {
                         "丰富资讯   任你阅读").background(R.color.start3)
                 )
                 .page(new TitlePage(R.mipmap.start4,
-                        "西邮有约   与你相约").background(R.color.start4)
+                        "西邮校园   与你相约").background(R.color.start4)
                 )
                 .swipeToDismiss(true)
                 .build();

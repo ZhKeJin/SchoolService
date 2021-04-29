@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">西邮有约</string>
+    <string name="app_name">西邮校园</string>
     <string name="welcome_tips">您可以把意见或者建议发送给我，然后我会将消息反馈给学生会或者学校组织。</string>
     <string name="title_activity_settings">Settings</string>
     <string name="year">年</string>

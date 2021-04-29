@@ -2,6 +2,7 @@ package com.display.hevttcdemo.view;
 
 import android.content.Context;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -73,6 +74,7 @@ public class BottomTabView extends LinearLayout {
         setOnTabItemSelectListener(new OnTabItemSelectListener() {
             @Override
             public void onTabItemSelect(int position) {
+                Log.d("TAG","viewpager");
                 viewPager.setCurrentItem(position);
             }
         });

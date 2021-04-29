@@ -26,7 +26,7 @@
         android:layout_marginBottom="8dp"
         android:gravity="center"
         android:textSize="14sp"
-        tools:text="西邮有约" />
+        tools:text="西邮校园" />
 
 </RelativeLayout>
 
