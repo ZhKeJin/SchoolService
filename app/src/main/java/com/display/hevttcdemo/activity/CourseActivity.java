@@ -1,43 +1,29 @@
 package com.display.hevttcdemo.activity;
 
-import android.annotation.SuppressLint;
-import android.app.AlertDialog;
-import android.content.BroadcastReceiver;
-import android.content.Context;
-import android.content.DialogInterface;
 import android.content.Intent;
-import android.content.IntentFilter;
 import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
-import android.os.Handler;
-import android.os.Message;
 import android.view.View;
-import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.Spinner;
 
 import androidx.annotation.RequiresApi;
 
 import com.display.hevttcdemo.bean.MyUser;
-import com.display.hevttcdemo.bean.NewsBean;
 import com.display.hevttcdemo.bean.Schedule;
 import com.display.hevttcdemo.utils.LogUtils;
-import com.google.gson.Gson;
 
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 
 import com.display.hevttcdemo.R;
 import com.display.hevttcdemo.adapter.WeekDayAdapter;
-import com.display.hevttcdemo.jw.bean.Course;
-import com.display.hevttcdemo.jw.bean.CourseTable;
-import com.display.hevttcdemo.jw.service.BroadcastAction;
-import com.display.hevttcdemo.utils.DateUtils;
-import com.display.hevttcdemo.utils.SPUtils;
-import com.display.hevttcdemo.widget.CourseWidgetProvider;
+//import com.display.hevttcdemo.jw.bean.Course;
+//import com.display.hevttcdemo.jw.bean.CourseTable;
+//import com.display.hevttcdemo.jw.service.BroadcastAction;
+//import com.display.hevttcdemo.widget.CourseWidgetProvider;
 
 import butterknife.OnClick;
 import cn.bmob.v3.BmobQuery;
@@ -54,7 +40,7 @@ public class CourseActivity extends BaseActivity {
     /**
      * 课程表
      */
-    private CourseTable mCourseTable;
+//    private CourseTable mCourseTable;
 
     /**
      * 当前周
@@ -84,7 +70,7 @@ public class CourseActivity extends BaseActivity {
     /**
      * 记录课程的map
      */
-    private HashMap<String, Course> mCourseMap;
+//    private HashMap<String, Course> mCourseMap;
 
     /**
      * 记录课程背景颜色的map
@@ -187,78 +173,6 @@ public class CourseActivity extends BaseActivity {
         intent.putExtras(bundle);
         ActionActivity ac = new ActionActivity();
         ac.showSheet(CourseActivity.this, i);
-    }
-
-
-    /**
-     * 排列课程到课表界面
-     */
-    private void rankCourse(int weekNum) {
-
-        for (int i = 0; i < lessons.length; i++) {
-            for (int j = 0; j < lessons[i].length; j++) {
-                Button btn = (Button) findViewById(lessons[i][j]);
-                btn.setText("");
-                btn.setBackgroundResource(R.drawable.kb0);
-            }
-        }
-
-        //记录当前周是单周还是双周
-        int currWeekState = (weekNum % 2 == 0) ? Course.DOUBLE_WEEK : Course.SINGLE_WEEK;
-        //排列课程信息
-        for (final String key : mCourseMap.keySet()) {
-            Course course = mCourseMap.get(key);
-            int courseState = course.getWeekState();//获取该课程的上课周的单双周
-            int x = course.getNumber();
-            int y = course.getDay() % 7;
-            Button btn = (Button) findViewById(lessons[x / 2][y]);
-            String oldText = (String) btn.getText();//取得当前按钮上的文本
-            String newText = key.split("\\*")[0];//
-            if (oldText.equals(newText)) continue;//若该课程是已经存在的课程，不处理
-            if (courseState == Course.ALL_WEEK || courseState == currWeekState || oldText == null || oldText.equals("")) {
-                btn.setText(newText);
-                btn.setTextColor(Color.WHITE);
-                btn.setBackgroundResource(bg[6]);
-                //注册点击课程时的时间监听器，用于打开课程详细信息界面
-                btn.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        Course c = mCourseMap.get(key);
-                        if (c == null) {
-                            return;
-                        }
-                        Intent intent = new Intent(CourseActivity.this, CourseInfoActivity.class);
-                        Bundle bundle = new Bundle();
-                        bundle.putSerializable("course", c);
-                        intent.putExtras(bundle);
-                        startActivity(intent);
-                    }
-                });
-            }
-
-        }
-        //填充颜色
-        for (int i = 0; i < lessons.length; i++) {
-            for (int j = 0; j < lessons[i].length; j++) {
-                Button btn = (Button) findViewById(lessons[i][j]);
-                String key = btn.getText() + "*" + (2 * i + 1) + j;
-                Course c = mCourseMap.get(key);//获得该课程的背景颜色
-                if (c == null) continue;
-                int state = c.getWeekState();
-                if (weekNum >= c.getStartWeek() && weekNum <= c.getEndWeek()) {
-                    if (state == Course.ALL_WEEK || state == currWeekState) {
-                        //该课程当周要上课，则设置背景颜色
-                        btn.setTextColor(Color.WHITE);
-                        btn.setBackgroundResource(mBgColorMap.get(c.getName()));
-                        continue;
-                    }
-                }
-                //该课程当周不上课，则设置背景颜色为灰色
-                btn.setTextColor(0x55555555);
-                btn.setBackgroundResource(R.drawable.unavailable);
-            }
-        }
-
     }
 
 

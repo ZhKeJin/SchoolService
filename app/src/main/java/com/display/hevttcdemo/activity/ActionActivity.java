@@ -22,7 +22,6 @@ import com.display.hevttcdemo.R;
 import com.display.hevttcdemo.bean.MyUser;
 import com.display.hevttcdemo.bean.Schedule;
 import com.display.hevttcdemo.bean.UserInfo;
-import com.display.hevttcdemo.jw.service.BroadcastAction;
 import com.display.hevttcdemo.utils.LogUtils;
 import com.display.hevttcdemo.utils.ToastUtil;
 import com.display.hevttcdemo.view.LoadDialog;

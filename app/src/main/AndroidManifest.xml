@@ -109,40 +109,40 @@
         <activity android:name=".activity.CourseActivity" />
         <activity android:name=".activity.PhotoSchoolActivity" />
         <activity android:name=".activity.WeatherActivity" />
-        <activity
-            android:name=".activity.CourseLoginActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-        <activity android:name=".activity.CourseInfoActivity" />
-        <activity android:name=".activity.ScoreAtivity" />
-        <activity
-            android:name=".activity.SettingActivity"
-            android:label="@string/title_activity_setting"
-            android:theme="@style/AppTheme" />
+<!--        <activity-->
+<!--            android:name=".activity.CourseLoginActivity"-->
+<!--            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />-->
+<!--        <activity android:name=".activity.CourseInfoActivity" />-->
+<!--        <activity android:name=".activity.ScoreAtivity" />-->
+<!--        <activity-->
+<!--            android:name=".activity.SettingActivity"-->
+<!--            android:label="@string/title_activity_setting"-->
+<!--            android:theme="@style/AppTheme" />-->
 
         <provider
             android:name="cn.bmob.v3.util.BmobContentProvider"
             android:authorities="com.display.hevttcdemo.BmobContentProvider" />
 
-        <receiver
-            android:name=".widget.CourseWidgetProvider"
-            android:label="西邮校园">
-            <meta-data
-                android:name="android.appwidget.provider"
-                android:resource="@xml/ocurse_widget_info" />
+<!--        <receiver-->
+<!--            android:name=".widget.CourseWidgetProvider"-->
+<!--            android:label="西邮校园">-->
+<!--            <meta-data-->
+<!--                android:name="android.appwidget.provider"-->
+<!--                android:resource="@xml/ocurse_widget_info" />-->
 
-            <intent-filter>
-                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
-                <action android:name="update_all_widget" />
-            </intent-filter>
-        </receiver>
+<!--            <intent-filter>-->
+<!--                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />-->
+<!--                <action android:name="update_all_widget" />-->
+<!--            </intent-filter>-->
+<!--        </receiver>-->
 
-        <service
-            android:name=".widget.CourseRemoteViewService"
-            android:permission="android.permission.BIND_REMOTEVIEWS" />
-        <service
-            android:name=".jw.service.DataService"
-            android:enabled="true"
-            android:exported="true" />
+<!--        <service-->
+<!--            android:name=".widget.CourseRemoteViewService"-->
+<!--            android:permission="android.permission.BIND_REMOTEVIEWS" />-->
+<!--        <service-->
+<!--            android:name=".jw.service.DataService"-->
+<!--            android:enabled="true"-->
+<!--            android:exported="true" />-->
     </application>
 
 </manifest>

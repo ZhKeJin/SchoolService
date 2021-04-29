@@ -51,8 +51,8 @@ public class BuyAddActivity extends BaseActivity implements ImagePickerAdapter.O
     EditText etBuyPrice;
     @BindView(R.id.et_buy_desc)
     EditText etBuyDesc;
-    @BindView(R.id.rv_buy_add_pic)
-    RecyclerView rvBuyAddPic;
+//    @BindView(R.id.rv_buy_add_pic)
+//    RecyclerView rvBuyAddPic;
     @BindView(R.id.et_buy_tel)
     EditText etBuyTel;
 
@@ -87,9 +87,9 @@ public class BuyAddActivity extends BaseActivity implements ImagePickerAdapter.O
         adapter = new ImagePickerAdapter(BuyAddActivity.this, selImageList, maxImgCount);
         adapter.setOnItemClickListener(this);
 
-        rvBuyAddPic.setLayoutManager(new GridLayoutManager(BuyAddActivity.this, 3));
-        rvBuyAddPic.setHasFixedSize(true);
-        rvBuyAddPic.setAdapter(adapter);
+//        rvBuyAddPic.setLayoutManager(new GridLayoutManager(BuyAddActivity.this, 3));
+//        rvBuyAddPic.setHasFixedSize(true);
+//        rvBuyAddPic.setAdapter(adapter);
     }
 
     private void initImagePicker() {

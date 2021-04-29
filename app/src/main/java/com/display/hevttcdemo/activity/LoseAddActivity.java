@@ -53,8 +53,8 @@ import top.zibin.luban.OnCompressListener;
  * @ 作者：zhangkejin
  */
 public class LoseAddActivity extends BaseActivity implements ImagePickerAdapter.OnRecyclerViewItemClickListener {
-    @BindView(R.id.rv_lose_add_pic)
-    RecyclerView rvLoseAddPic;
+//    @BindView(R.id.rv_lose_add_pic)
+//    RecyclerView rvLoseAddPic;
     @BindView(R.id.sp_lose_kind)
     Spinner spLoseKind;
     @BindView(R.id.et_lose_tel)
@@ -113,9 +113,9 @@ public class LoseAddActivity extends BaseActivity implements ImagePickerAdapter.
         adapter = new ImagePickerAdapter(LoseAddActivity.this, selImageList, maxImgCount);
         adapter.setOnItemClickListener(this);
 
-        rvLoseAddPic.setLayoutManager(new GridLayoutManager(LoseAddActivity.this, 3));
-        rvLoseAddPic.setHasFixedSize(true);
-        rvLoseAddPic.setAdapter(adapter);
+//        rvLoseAddPic.setLayoutManager(new GridLayoutManager(LoseAddActivity.this, 3));
+//        rvLoseAddPic.setHasFixedSize(true);
+//        rvLoseAddPic.setAdapter(adapter);
     }
 
     private void initImagePicker() {
